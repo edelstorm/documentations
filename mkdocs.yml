@@ -102,7 +102,8 @@ markdown_extensions:
 # Page tree
 nav:
   - Amazon Web Services: index.md
-  - Registration: registration.md
+  - Inscription: inscription.md
+  - Nom de domaine: nomdedomaine.md
   - Design: design.md
   - Extensions:
     - Metadata: extensions/metadata.md
