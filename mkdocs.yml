@@ -46,7 +46,7 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: en
+  language: fr
   feature:
     tabs: true
   palette:
@@ -102,7 +102,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Amazon Web Services: index.md
-  - Inscription: inscription.md
+  - Creation du compte: creation-du-compte.md
   - Nom de domaine: nomdedomaine.md
   - Design: design.md
   - Extensions:
