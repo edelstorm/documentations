@@ -1,4 +1,4 @@
-# Création du compte <small>- AWS</small>
+# Création du compte - <small>AWS</small>
 
 !!! tip "Conseil"
     Chaque étape sera accompagnée d’une image ou d’une animation, n’hésitez pas à vous aider des instructions !

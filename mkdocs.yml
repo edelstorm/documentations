@@ -103,7 +103,7 @@ markdown_extensions:
 nav:
   - Amazon Web Services: index.md
   - Creation du compte: creation-du-compte.md
-  - Nom de domaine: nomdedomaine.md
+  - Nom de domaine: nom-de-domaine.md
   - Design: design.md
   - Extensions:
     - Metadata: extensions/metadata.md
