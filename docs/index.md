@@ -1,5 +1,7 @@
 # Introduction à la formation Edelstorm
 
+***
+
 **Bienvenue sur la documentation Edelstorm.io !**
 
 Avant de commencer la construction de votre site, voici une courte introduction qui vous indiquera ce dont vous avez besoin pour commencer et qui vous familiarisera avec l'aspect technique de la formation. 
@@ -41,7 +43,7 @@ Nous utiliserons trois outils pour créer votre site :
 
 ***
 Voilà ! vous pouvez désormais passer à la [première étape de la création de votre site][4].
-[4]: inscription.md
+[4]: creation-du-compte.md
 Toutefois, si vous rencontrez un mot que vous ne comprenez pas, vous pouvez faire un tour dans le Glossaire ci-dessous !
 ***
 
