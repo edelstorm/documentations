@@ -105,6 +105,8 @@ nav:
   - Creation du compte: creation-du-compte.md
   - Nom de domaine: nomdedomaine.md
   - Design: design.md
+  - Glossaire:
+    - Définitions et explications: glossaire/definitionsexplications.md
   - Extensions:
     - Metadata: extensions/metadata.md
 

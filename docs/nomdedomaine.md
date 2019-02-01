@@ -15,4 +15,3 @@ Vous êtes sur votre compte AWS. Si vous avez fermez la fenêtre suivez [ce lien
 
 [![Material for MkDocs](assets/images/aws/nomdedomaine/fr/6.gif)](assets/images/aws/nomdedomaine/fr/6.gif)
 [![Material for MkDocs](assets/images/aws/nomdedomaine/fr/7.gif)](assets/images/aws/nomdedomaine/fr/7.gif)
-[![Material for MkDocs](assets/images/aws/nomdedomaine/fr/8.gif)](assets/images/aws/nomdedomaine/fr/8.gif)
