@@ -73,14 +73,14 @@ Rendez-vous sur le site web d'<a href="https://portal.aws.amazon.com/billing/sig
 
 !!! warning "Valider son numéro"
 
-    1. Tenez-vous à proximité de votre téléphone, le service automatisé d'AWS va vous contacter directement.
-    2. Saisissez la suite de quatre chiffres qui s'affiche sur votre écran sur le clavier numérique de votre téléphone.
+    1. Tenez-vous à proximité de votre téléphone, lors de la prochaine étape, le service automatisé d'AWS va vous contacter.
+    2. Vous devrez saisir une suite de quatre chiffres qui s'affichera sur votre écran sur le clavier numérique de votre téléphone.
 
 ***
 
 **Vérifier votre numéro de téléphone :**
 
-Sur cette étape AWS va vérifier que vous êtes bien une véritable personne et non un robot.
+Lors de cette étape, AWS vérifie que vous êtes une véritable personne et non un robot.
 
 :    * Sélectionnez votre pays et renseignez votre numéro de téléphone.
 :    * Complétez le Captcha de sécurité en reproduisant la suite de lettres et de chiffres que vous voyez à l’écran.
@@ -96,7 +96,7 @@ Sur cette étape AWS va vérifier que vous êtes bien une véritable personne et
 
 **Vous allez recevoir un appel d’AWS**
 
-Saisissez sur votre téléphone les quatre chiffres qui s'affichent sur votre l'écran.
+Saisissez sur votre téléphone les quatre chiffres qui s'affichent sur votre écran d'ordinateur.
 
 ***
 
@@ -108,8 +108,8 @@ Saisissez sur votre téléphone les quatre chiffres qui s'affichent sur votre l'
 
 **Attendez un instant...**
 
-L’opération sera réussie ce message de confirmation s’affiche à l’écran.<br>
-Vous pouvez raccrocher et cliquer sur {==Continuer==}
+L’opération sera réussie si ce message de confirmation s’affiche à l’écran.<br>
+Vous pouvez raccrocher et cliquer sur {==Continuer==}.
 
 ***
 
@@ -117,7 +117,7 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}
 
 !!! warning "Incident possible"
 
-    Si pour une raison ou une autre vous raccrochez avant d’avoir pu entrer le code ou que le réseau se coupe, gardez la page ouverte. Après quelques minutes, AWS détectera un problème et vous demandera de recommencer l’opération. Vous n’aurez qu’à cliquer sur le bouton {==Recommencer==}
+    Si pour une raison ou une autre vous raccrochez avant d’avoir pu entrer le code ou que le réseau se coupe, gardez la page ouverte. Après quelques minutes, AWS détectera un problème et vous demandera de recommencer l’opération. Vous n’aurez qu’à cliquer sur le bouton {==Recommencer==}.
 
 ## Basic Plan
 
@@ -127,8 +127,8 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}
 
 **Vous êtes désormais sur la page qui présente des différentes offres de support**
 
-:    * Choisissez la première offre *Basic Plan* en cliquant sur {==Free==}
-:    * Puis, cliquez sur {==Sign in to the Console==}
+:    * Choisissez la première offre *Basic Plan* en cliquant sur {==Free==}.
+:    * Puis, cliquez sur {==Sign in to the Console==}.
 
 ***
 
@@ -140,8 +140,8 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}
 
 **Vous pouvez à présent vous connectez à votre compte AWS**
 
-:    * Saississez l'adresse e-mail de votre compte puis cliquez sur {==Suivant==}
-:    * Saississez le mot de passe de votre compte, cliquez sur {==Connexion==}
+:    * Saississez l'adresse e-mail de votre compte puis cliquez sur {==Suivant==}.
+:    * Saississez le mot de passe de votre compte, cliquez sur {==Connexion==}.
 
 ***
 
