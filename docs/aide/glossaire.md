@@ -10,6 +10,7 @@ Un serveur est ordinateur virtuel à distance qui permet également de recevoir 
 C’est l’adresse à laquelle les utilisateurs pourront se rendre pour visiter votre site. Par exemple, le nom de domaine d’Edelstorm est : edelstorm.io.
 
 ##Extension de nom de domaine
+
 ##Terminal
 
 ##IP static
