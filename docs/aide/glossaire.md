@@ -11,6 +11,7 @@ C’est l’adresse à laquelle les utilisateurs pourront se rendre pour visiter
 
 ##Extension de nom de domaine
 
+
 ##Terminal
 
 ##IP static

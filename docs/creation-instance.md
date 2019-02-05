@@ -14,6 +14,15 @@
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/11.gif)](assets/images/aws/creation-instance/en/11.gif)
 
+## IP Static
+
+[![Material for MkDocs](assets/images/aws/creation-instance/en/12.gif)](assets/images/aws/creation-instance/en/12.gif)
+
+## DNS
+
+[![Material for MkDocs](assets/images/aws/creation-instance/en/13.gif)](assets/images/aws/creation-instance/en/13.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/en/14.gif)](assets/images/aws/creation-instance/en/14.gif)
+
 ## Options de l'instance
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/4.png)](assets/images/aws/creation-instance/en/4.png)
