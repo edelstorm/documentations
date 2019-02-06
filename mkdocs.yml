@@ -102,13 +102,13 @@ markdown_extensions:
 # Page tree
 nav:
   - Amazon Web Services: index.md
-  - Creation du compte: creation-du-compte.md
+  - Création du compte: creation-du-compte.md
   - Sign Up: sign-up.md
   - Nom de domaine: nom-de-domaine.md
   - Domain name: domain-name.md
   - Création de l'instance: creation-de-l'instance.md
   - Instance creation: instance-creation.md
-  - Run Cloud: run-cloud-fr.md
+  - Run Cloud FR: run-cloud-fr.md
   - Run Cloud EN: run-cloud-en.md
   - Design: design.md
   - Aide:

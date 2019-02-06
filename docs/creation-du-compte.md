@@ -7,7 +7,7 @@
 
 ***
 
-Rendez-vous sur le site web d'<a href="https://portal.aws.amazon.com/billing/signup#/start" target="_blank">Amazon Web Services</a>.
+**Rendez-vous sur le site web d'<a href="https://portal.aws.amazon.com/billing/signup#/start" target="_blank">Amazon Web Services</a>**
 
 ***
 
