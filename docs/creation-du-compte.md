@@ -96,7 +96,7 @@ Lors de cette étape, AWS vérifie que vous êtes une véritable personne et non
 
 **Vous allez recevoir un appel d’AWS**
 
-Saisissez sur votre téléphone les quatre chiffres qui s'affichent sur votre écran d'ordinateur.
+:    * Saisissez sur votre téléphone les quatre chiffres qui s'affichent sur votre écran d'ordinateur.
 
 ***
 

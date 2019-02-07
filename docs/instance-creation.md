@@ -1,12 +1,12 @@
-# Creation de l'instance <small>- Lightsail</small>
+# Instance creation <small>- Lightsail</small>
 
-!!! info "Copier / coller facilement les commandes du tutoriel en cliquant sur l'icône de droite."
+!!! tip "Copy / paste the commands more easily by clicking on the icon on the right."
 
     ``` sh
-    Copiez cette phrase pour tester.
+    Copy this sentence to try.
     ```
 
-## Générer une paire de clés SSH
+## Generate an SSH key
 
 {==
 
@@ -20,78 +20,76 @@
 
 ***
 
-**Sécurisation des communications entre votre machine et votre futur serveur**
+**Securing communications between your computer and your future server**
 
-:    * En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
-:    * Une fois dans votre terminal, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
+:    * At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type *Terminal* then hit <kbd>Enter</kbd>.
+:    * When you are on your terminal, type this command and hit <kbd>Enter</kbd>.
 ``` sh
 ssh-keygen -t rsa
 ```
 
-:    * Vous pouvez ensuite nommer votre paire de clés, sinon appuyez juste sur <kbd>Entrer</kbd>.
+:    * Then, you can name your keys, then hit <kbd>Enter</kbd>.
 
-!!! note "À savoir"
+!!! note "To keep in mind"
 
-    Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas voir se former sur votre écran.<br>
-    C'est comme si n'étiez pas en train de taper sur votre clavier.<br> 
-    Vous devez donc le définir à l'aveugle !
+    When you type your password in a terminal, what you type will not appear on the screen. It's like your not typing, but you are!<br>
+    So you will have to type it blindly.
 
-:    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
-:    * Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.
+:    * Choose a password and hit <kbd>Enter</kbd>.
+:    * Typz your password again and hit <kbd>Enter</kbd>.
 
 ***
 
-**Localisation de votre paire de clés SSH**
+**Tracking your SSH key**
 
-:    * Ouvrez votre Finder, cliquez en haut sur **Aller** puis cliquez sur **Aller au dossier...**
-:    * Dans la barre de recherche, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
+:    * Open your Finder, click on the top menu and choose **Go**, then click on **Go to file...**
+:    * In the search bar, type this command and hit <kbd>Enter</kbd>.
 ``` sh
 ~/.ssh
 ```
 
-:    * Une fois dans le dossier {==.ssh==} faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.
+:    * Once you are in the file {==.ssh==}, drag the file icon you can see at the top of the Finder windows, on your favorites. This will make it more easy for you to access it for the next step.
 
-!!! success "Votre machine a généré votre paire de clés SSH que vous pouvez facilement localiser à partir de son dossier !"
+!!! success "Your computer generated SSH keys that you can find easily from its file!"
 
 ***
 
-## Création de l'instance
+## Instance creation
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/2.gif)](assets/images/aws/creation-instance/en/2.gif)
 
 ***
 
-**Création de votre instance Amazon Lightsail**
+**Amazon Lightsail instance creation**
 
-:    * Rendez-vous sur votre console d'administration AWS, tapez *Lightsail* dans la barre recherche et cliquez sur ce service.
-:    * Sélectionnez la langue que vous souhaitez pour votre interface.
-:    * Cliquez sur {==Créer une instance==}.
+:    * Go on your AWS administration console, type *Lightsail* in the search bar and click on this service.
+:    * Choose the language you prefer.
+:    * Click on {==Create an instance==}.
 
 ***
 
-**Zone géographique, type d'image et connexion SSH**
+**Geographic zone, image type, and SSH connexion**
 
-:    * Choisissez la région de votre instance, elle doit être au plus proche de vos futurs utilisateurs. Laissez par défaut la zone de votre instance.
-:    * Choisissez *Linux/Unix* comme plateforme.
-:    * Sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
-:    * Téléchargez votre paire de clés SSH publique (celle se terminant par `.pub`) afin de sécuriser les communications entre votre machine et cette instance.
-
+:    * Choose a region for your instance, it has to be close to where your future users will be located. Leave the instance zone by default.
+:    * Choose *Linux/Unix* as a platform.
+:    * Select *Ubuntu 16.04 LTS* an operating system.
+:    * Upload your SSH public key (the on that ends up with `.pub`). It will secure communications between your computer and this instance.
 ***
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/3.gif)](assets/images/aws/creation-instance/en/3.gif)
 
 ***
 
-**Plan d'instance et identification**
+**Instance and identification plan**
 
-!!! info "Facturation AWS"
+!!! info "AWS billing"
 
-    À partir de cette étape, vous souscrivez au service Amazon Lighsail, votre instance peut-être supprimée à tout moment si vous n'en avez plus besoin. Vous pouvez consulter l'évolution de votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">facturation</a>.
+    From this step, you are subscribing to the Amazon Lighsail service. Your account and instance can be deleted at any point if you don't need it anymore. You can check your billing evolution <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">here</a>.
 
-:    * Sélectionnez le plan basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
-:    * Nommez votre instance, de préférence avec votre nom de domaine.
-:    * Vous pouvez aussi appliquer des tags d'identifications, si vous pensez créer de nombreuses instances par la suite.
-:    * Cliquez sur {==Créer une instance==} et attendez 5 minutes que votre instance s'initialise.
+:    * Select the basic **3.50$ per month** plan, the first trial month is free.
+:    * Name your instance, with your domain name preferably.
+:    * You can also add identifications tags if you think you are going to create other instances in the future.
+:    * Click on {==Create an instance==} and wait for 5 minutes that your instance to initialize.
 
 !!! success "Votre instance est prête à être utilisée pour votre site web."
 
@@ -103,57 +101,61 @@ ssh-keygen -t rsa
 
 ***
 
-**Ouverture des ports HTTPS & FTP**
+**Opening of the HTTPS & FTP ports**
 
-:    * Cliquez sur votre instance et rendez-vous dans la section *Mise en réseau*.
-:    * Ouvrez les ports HTTPS et FTP (34210) pour sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
-:    * Cliquez sur {==Sauvegarder==}.
+:    * Click on your instance and go to the *Networking* section.
+:    * Click on *add another*.
+:    * Change the *Custom* to *HTTPS*.
+:    * Click on *add another*.
+:    * Leave the *Custom* to *HTTPS* and add *34210* on *Port range*. 
+:    * This will secure the communication between your users, the externs apps and your instance.
+:    * Click on {==Save==}.
 
-!!! success "Votre instance est correctement configurée pour la suite de ce tutoriel"
+!!! success "Your instance is correctly configured for the rest of this tutorial!"
 
 ***
 
-## IP Statique
+## Static IP
 
 {==
 
-😭 Tu as oublié un GIF ici. Celui ou je clique sur Static IP pour le créer et l'attacher à l'instance.
+😭 Tu as oublié un GIF ici. Celui ou je clique sur Static IP pour le créer et l'attacher à l'instance. REVOIR TEXTE EN FONCTION DU GIF
 
 ==}
 
 ***
 
-**Fixation de l'adresse IP de votre instance**
+**Attach the IP address of your instance**
 
-!!! info "IP dynamique et IP statique"
+!!! info "Dynamic IP and static IP"
 
-    Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire que chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.
+     By default, your instance has a dynamic IP. Meaning that each time you restart your instance, your IP address changes. You need a static IP so your website is reachable from a unique address. A static IP is free when it is linked to an instance.
 
-:    * Dans la section *Mise en réseau* de votre instance, cliquez sur *Attacher une IP Statique*.
-:    * Sélectionnez la même zone géographique que celle choisie pour votre instance.
-:    * Attachez votre instance à cette IP statique.
-:    * Nommez votre IP statique de cette façon, avec VOTRE nom de domaine : *StaticIp-VotreNomDeDomaine*.
-:    * Cliquez sur {==Créer==}.
+:    * Go in the *Networking* section of your instance and click on *Attach a Static IP*.
+:    * Select the same geographic zone than the one you chose for your instance.
+:    * Attach your instance to this Static IP.
+:    * Name your static IP this way, with YOUR domain name : *StaticIp-YourDomainName*.
+:    * Click on {==Create==}.
 
-!!! success "Votre instance possède une adresse IP unique !"
+!!! success "Your instance now has a unique IP!"
 
 ***
 
-## Zone DNS
+## DNS zone
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/12.gif)](assets/images/aws/creation-instance/en/12.gif)
 
 ***
 
-**Association de votre instance à votre nom de domaine**
+**Combination of your instance and domain name**
 
-:    * Cliquez sur *Accueil* en haut de votre interface Lightsail, puis rendez vous dans l'onglet *Mise en réseau*.
-:    * Cliquez sur {==Créer une zone DNS==}.
-:    * Dans le champ, spécifiez votre nom de domaine.
-:    * Vous pouvez associer des tags d'identifications à cette zone DNS.
-:    * Cliquez sur {==Créer une zone DNS==}
+:    * Click on *Home* at the top of the page, then go and click on the *Networking* tab.
+:    * Click on {==Create a DNS zone==}.
+:    * In the field, write your domain name.
+:    * You can add identifications tags to this DNS zone.
+:    * Click on {==Create a DNS zone==}
 
-!!! success "Votre instance possède une zone DNS !"
+!!! success "Your instance now has a DNS zone!"
 
 ***
 
@@ -161,16 +163,16 @@ ssh-keygen -t rsa
 
 ***
 
-**Création des enregistrements pour votre zone DNS**
+**Creation of DNS records**
 
-:    * Cliquez sur *Ajouter un enregistrement*.
-:    * Ajoutez un premier enregistrement de type A pour `@.VotreNomDeDomaine.com` pointant vers votre IP statique. <br>
-       **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer.
-:    * Cliquez à nouveau sur *Ajouter un enregistrement*
-:    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br>
-       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer.
+:    * Click on *Add record*.
+:    * Add a first type A record for `@.YourDomainName.com` pointing to your static IP. <br>
+       **To do so**, type <kbd>@</kbd> on the first field on the left. Then select the static IP you just created on the right.
+:    * Click on *Add record* again.
+:    * Add a second type A for `www.YourDomainName.com` pointing to your static IP.<br>
+       **To do so**, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right.
 
-!!! success "L'IP statique de votre instance pointe vers votre nom de domaine !"
+!!! success "The static IP of your instance now point to your domain name!"
 
 ***
 
@@ -178,21 +180,21 @@ ssh-keygen -t rsa
 
 ***
 
-**Injection des nouveaux serveurs de nom pour votre nom de domaine**
-:    * Nous sommes toujours sur la même page. Sous les enregistrements se trouve une section *Nom de serveurs*. Il s'agit de vos nouveaux   noms de serveurs pour cette zone DNS. <br>
-    **Copiez le premier**.
-:    * Ouvrez un nouvel onglet votre console d'administration AWS. Vous pouvez facilement y accéder en faisant un clic droit, ouvrir dans un nouvel onglet, sur *AWS* en haut à droite de votre interface Lightsail.
-:    * Cherchez le service *Route 53* dans la barre de recherche et cliquez dessus.
-:    * Sur la gauche de l'interface, cliquez sur *Domaines enregistrés*.
-:    * Cliquez sur votre nom de domaine.
-:    * Sur la droite de l'interface, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
-:    * Cliquez sur {==Mettre à jour==}.
+**Adding new name servers for your domain name**
+:    * We are still on the same page. Under the records, you can see the *Nameservers*. Those are your new name servers for your DNS zone.<br>
+    **Copy the first**.
+:    * Open your AWS homepage on a new tab. You can easely do so by doing a right clic, open in a new tap on *AWS* at the top right of your page. 
+:    * Search for *Route 53* on the search bar and click on it.
+:    * On the left side of the interface, click on *Registered domains*.
+:    * Click on your domain name.
+:    * On the right of the interface on *Add or edit name servers*. Then, replace the name servers you see with the 4 new one from your DNS zone **by copy/pasting it, one by one**.
+:    * Click on {==Update==}.
 
-!!! success "Les noms de serveurs de votre zone DNS sont ceux de votre nom de domaine !"
+!!! success "Your DNS servers now match your domain name!"
 
 ***
 
-## Options de l'instance
+## Instance options
 
 {==
 
@@ -201,19 +203,19 @@ Cropper les images<br>
 
 ==}
 
-!!! info "Tour d'horizon"
+!!! info "Overview"
 
-    Vous venez de créer votre première instance, en cliquant sur son nom depuis l'Accueil vous découvrirez de nombreuses options que nous allons vous présenter ci-dessous.
+    You just created your first instance. By clicking on its name from the Lightsail homepage you will discover that you have some options at your disposal. We are going to tell you about it.
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/4.png)](assets/images/aws/creation-instance/en/4.png)
 
 ***
 
-**Connexion SSH depuis votre navigateur**
+**SSH connexion from your browser**
 
-:    * Dans l'onglet *Connexion*, en cliquant sur *Se connecter à l'aide de SSH* vous pourrez accéder en mode sécurisé au terminal de votre serveur à distance.
-:    * Vous pouvez choisir de vous connecter, d'arrêter, de redémarrer et de supprimer cette instance.
-:    * Vous utilisez votre IP statique et votre nom d'utilisateur affichés ici, si vous souhaitez vous connecter en SSH directement avec le terminal de votre ordinateur.
+:    * In the *Connect* tab, by clicking on *Connect using SSH* you can access in a secure way at your server through a terminal.
+:    * You can choose to connect to, stop, restart or delete this instance.
+:    * You can use your static IP and your domain name displayed here if you want to connect to your SSH directly from your computer.
 
 ***
 
@@ -221,10 +223,10 @@ Cropper les images<br>
 
 ***
 
-**Stockage évolutif**
+**Storage**
 
-:    * Dans l'onglet *Stockage*, avec le plan à 3.50$ par mois vous bénéficiez de 20Go de stockage sur cette instance. Ce qui est largement suffisant pour vos besoins actuels.
-:    * Si vous avez besoin de plus d'espace de stockage, vous pouvez ajouter des disques supplémentaires à cette instance. L'ajout de nouveaux disques est une fonction payante.
+:    * In the *Storage* tab, with the 3.50$ per month plan, you beneficiate of 20Go storage on this instance. Which is enough for your currents needs.
+:    * If you need more storage space, you can add storage discs to this instance. Adding new discs in a paying service.
 
 ***
 
@@ -232,9 +234,9 @@ Cropper les images<br>
 
 ***
 
-**Métriques**
+**Metrics**
 
-:    * Dans l'onglet *Métriques*, vous pouvez obtenir les statistiques basées sur l'usage que vous faites de votre instance.
+:    * In the *Metrics* tag, you can get statistics on what you do with your instance.
 
 ***
 
@@ -244,7 +246,7 @@ Cropper les images<br>
 
 **Snapshots**
 
-:    * L'onglet *Snapshots* est une fonctionnalité très importante sur laquelle nous reviendrons par la suite. Un snapshot vous permet de sauvegarder la totalité de votre instance (et donc votre site) à un instant T, cela peut vous permettre de revenir en arrière en cas d'erreur.
+:    * The *Snapshots* tab is a very important functionality. We will talk more about it later, but basically, it allows you to save your instance and its content when you want it. It will allow you to come back to an earlier version of your instance (and your website so) if you make a mistake.
 
 ***
 
@@ -254,17 +256,16 @@ Cropper les images<br>
 
 **Tags**
 
-:    * Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement si vous en avez plusieurs.
-
+:    * You can add tags to your instance to identify it more easily if you have several ones.
 ***
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/9.png)](assets/images/aws/creation-instance/en/9.png)
 
 ***
 
-**Historique**
+**History**
 
-:    * Vous pouvez consulter l'historique pour voir vos dernières actions sur cette instance.
+:    * You can consult the history of your last actions on this instance.
 
 ***
 
@@ -272,10 +273,10 @@ Cropper les images<br>
 
 ***
 
-**Suppression**
+**Delete**
 
-:    * À tout moment, vous pouvez supprimer votre instance depuis cet onglet.
+:    * At any time, you can delete your instance through this tab.
 
 ***
 
-!!! success "Félicitation votre instance est configurée pour votre site web !"
+!!! success "Congratulation your instance is now configured for your website!"
