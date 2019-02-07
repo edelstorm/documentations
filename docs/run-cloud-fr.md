@@ -39,7 +39,7 @@
 
 :    * Cliquez sur *Connect a New Server*.
 :    * Nommez votre serveur avec le nom de votre site web.
-:    * Copiez/collez l'IP statique votre instance Lightsail.
+:    * Copiez/collez l'IP statique de votre instance Lightsail.
 :    * Inscrivez *AWS* comme Server Provider.
 :    * Cliquez sur {==*Connect this server*==}.
 :    * RunCloud va alors générer une commande d'installation pour votre serveur. Copiez là en cliquant sur l'icône vert à droite de la commande.

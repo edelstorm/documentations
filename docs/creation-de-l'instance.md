@@ -1,6 +1,6 @@
-# Creation de l'instance <small>- Lightsail</small>
+# Création de l'instance <small>- Lightsail</small>
 
-!!! info "Copier / coller facilement les commandes du tutoriel en cliquant sur l'icône de droite."
+!!! tip "Copier / coller facilement les commandes du tutoriel en cliquant sur l'icône de droite."
 
     ``` sh
     Copiez cette phrase pour tester.
@@ -20,7 +20,7 @@
 
 ***
 
-**Sécurisation des communications entre votre machine et votre futur serveur**
+**Sécurisation des communications entre votre ordinateur et votre futur serveur**
 
 :    * En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
 :    * Une fois dans votre terminal, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
@@ -33,7 +33,7 @@ ssh-keygen -t rsa
 !!! note "À savoir"
 
     Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas voir se former sur votre écran.<br>
-    C'est comme si n'étiez pas en train de taper sur votre clavier.<br> 
+    C'est comme si n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper.<br> 
     Vous devez donc le définir à l'aveugle !
 
 :    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
@@ -43,7 +43,7 @@ ssh-keygen -t rsa
 
 **Localisation de votre paire de clés SSH**
 
-:    * Ouvrez votre Finder, cliquez en haut sur **Aller** puis cliquez sur **Aller au dossier...**
+:    * Ouvrez votre Finder, cliquez en haut dans la barre de menu sur **Aller**, puis cliquez sur **Aller au dossier...**
 :    * Dans la barre de recherche, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
 ~/.ssh
@@ -181,14 +181,14 @@ ssh-keygen -t rsa
 **Injection des nouveaux serveurs de nom pour votre nom de domaine**
 :    * Nous sommes toujours sur la même page. Sous les enregistrements se trouve une section *Nom de serveurs*. Il s'agit de vos nouveaux   noms de serveurs pour cette zone DNS. <br>
     **Copiez le premier**.
-:    * Ouvrez un nouvel onglet votre console d'administration AWS. Vous pouvez facilement y accéder en faisant un clic droit, ouvrir dans un nouvel onglet, sur *AWS* en haut à droite de votre interface Lightsail.
+:    * Ouvrez dans un nouvel onglet votre console d'administration AWS. Vous pouvez facilement y accéder en faisant un clic droit, ouvrir dans un nouvel onglet, sur *AWS* en haut à droite de votre interface Lightsail.
 :    * Cherchez le service *Route 53* dans la barre de recherche et cliquez dessus.
 :    * Sur la gauche de l'interface, cliquez sur *Domaines enregistrés*.
 :    * Cliquez sur votre nom de domaine.
-:    * Sur la droite de l'interface, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
+:    * Sur la droite de l'interface, cliquez sur *Ajouter ou editer les noms de serveurs*, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
 :    * Cliquez sur {==Mettre à jour==}.
 
-!!! success "Les noms de serveurs de votre zone DNS sont ceux de votre nom de domaine !"
+!!! success "Les serveurs de votre zone DNS correspondent à votre nom de domaine !"
 
 ***
 
@@ -203,7 +203,7 @@ Cropper les images<br>
 
 !!! info "Tour d'horizon"
 
-    Vous venez de créer votre première instance, en cliquant sur son nom depuis l'Accueil vous découvrirez de nombreuses options que nous allons vous présenter ci-dessous.
+    Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous découvrirez de nombreuses options que nous allons vous présenter ci-dessous.
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/4.png)](assets/images/aws/creation-instance/en/4.png)
 
@@ -213,7 +213,7 @@ Cropper les images<br>
 
 :    * Dans l'onglet *Connexion*, en cliquant sur *Se connecter à l'aide de SSH* vous pourrez accéder en mode sécurisé au terminal de votre serveur à distance.
 :    * Vous pouvez choisir de vous connecter, d'arrêter, de redémarrer et de supprimer cette instance.
-:    * Vous utilisez votre IP statique et votre nom d'utilisateur affichés ici, si vous souhaitez vous connecter en SSH directement avec le terminal de votre ordinateur.
+:    * Vous pouvez utiliser votre IP statique et nom d'utilisateur affichés ici, si vous souhaitez vous connecter en SSH directement avec le terminal de votre ordinateur.
 
 ***
 
@@ -244,7 +244,7 @@ Cropper les images<br>
 
 **Snapshots**
 
-:    * L'onglet *Snapshots* est une fonctionnalité très importante sur laquelle nous reviendrons par la suite. Un snapshot vous permet de sauvegarder la totalité de votre instance (et donc votre site) à un instant T, cela peut vous permettre de revenir en arrière en cas d'erreur.
+:    * L'onglet *Snapshots* est une fonctionnalité très importante sur laquelle nous reviendrons par la suite. Un snapshot vous permet de sauvegarder la totalité de votre instance (et donc votre site) à un instant T. Cela peut donc vous permettre de revenir à une version antérieure de votre instance en cas d'erreur.
 
 ***
 

@@ -1,22 +1,22 @@
 # Run Cloud <small>- AWS</small>
 
-## Création du compte
+## Sign up
 
 !!! info "Runcloud.io"
 
-    Runcloud est un service vous proposant une offre gratuite vous permettant de déployer des applications PHP en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud pour y installer et configurer Wordpress.
+    Runcloud is a service that offers a free and secure way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud interface so we can install and configure Wordpress on it.
 
 [![Material for MkDocs](assets/images/aws/run-cloud/en/1.gif)](assets/images/aws/run-cloud/en/1.gif)
 
 ***
 
-**Rendez-vous sur le site web de <a href="https://runcloud.io/" target="_blank">RunCloud.io</a>**
+**Go to <a href="https://runcloud.io/" target="_blank">RunCloud.io</a>**
 
-!!! info "Fenêtre instance AWS"
-    Gardez cependant une fenêtre AWS ouverte sur la page de votre instance. Vous aurez besoin de copier/coller l'adresse IP statique de celle-ci.
+!!! info "AWS instance windows"
+    Keep a window open on your Lightsail instance page. You will need to copy/paste your instance static IP address.
 
-:    * Cliquez sur {==*Sign Up*==} en haut à droite.
-:    * Remplissez le formulaire et cliquez sur {==*Create Free Account*==}.
+:    * Click on {==*Sign Up*==} at the top right.
+:    * Fill the form and click on {==*Create Free Account*==}.
 
 ***
 
@@ -24,8 +24,8 @@
 
 ***
 
-:    * Confirmez votre compte en cliquant sur le lien que vous venez de recevoir dans votre boîte mail.
-:    * Connectez-vous à votre compte avec vos identifiants en cliquant sur {==*Sign in to Dashboard*==}.
+:    * Configure your account by clicking on the link you just received on your email box.
+:    * Connect to your account with your login and passwords by clicking on {==*Sign in to Dashboard*==}.
 
 ***
 
@@ -35,22 +35,22 @@
 
 ***
 
-**Installation de Runcloud sur votre instance Lightsail**
+**Install Runcloud on your Lightsail instance**
 
-:    * Cliquez sur *Connect a New Server*.
-:    * Nommez votre serveur avec le nom de votre site web.
-:    * Copiez/collez l'IP statique votre instance Lightsail.
-:    * Inscrivez *AWS* comme Server Provider.
-:    * Cliquez sur {==*Connect this server*==}.
-:    * RunCloud va alors générer une commande d'installation pour votre serveur. Copiez là en cliquant sur l'icône vert à droite de la commande.
-:    * Revenez sur Lightsail et connectez-vous en SSH à votre instance en cliquant sur *Connexion*.
-:    * Une fois à l'intérieur du terminal de votre serveur, tapez la commande ci-dessous (vous ne pourrez pas la copier/coller) pour obtenir les droits administrateurs et appuyez sur <kbd>Entrer</kbd>.
+:    * Click on *Connect a New Server*.
+:    * Name your server with your websote name.
+:    * Copy/paste the static IP of your instance.
+:    * Put *AWS* as a Server Provider.
+:    * Click on {==*Connect this server*==}.
+:    * RunCloud is going to generate an installation command on your server. Copy it by clicking on the green icon on the right.
+:    * Go back on Lightsail and connect to your SSH instance by clicking on *Connect*.
+:    * Once you are on the terminal, type the command below (make sure to type it, you can not copy/paste it). This will allow you to get admin right. Then hit <kbd>Enter</kbd>.
 ``` sh
 sudo su
 ```
 
-:    * Cliquez sur l'icône orange en bas à droite de la fenêtre du terminal et collez *(attention pour savoir comment coller dans un terminal, regardez l'étape suivante)* l'ensemble de la commande provenant de Runcloud à l'intérieur. 
-:    * Cliquez sur la partie noire du terminal, faites un clic droit pour coller la commande à l'intérieur et appuyez sur <kbd>Entrer</kbd>.
+:    * Click on the orange icon at the bottom right of the terminal window. Paste *(attention to understand how to paste on the terminal, look at the next step)* the installation command from Runcloud on the terminal. 
+:    * Click on the black part of the terminal, do a right click to paste the command on the terminal, then hit <kbd>Enter</kbd>.
 
 ***
 
@@ -59,12 +59,13 @@ sudo su
 
 ***
 
-!!! warning "Configuration de Runcloud"
+!!! warning "Runcloudvset up"
 
-    La commande va alors installer Runcloud avec l'ensemble des configurations nécessaires à son fonctionnement. Surtout, ne quittez pas le terminal avant la fin du processus qui dure une dizaine de minutes. Une fois terminé, pensez impérativement à sauvegarder les mots de passe MySQL de votre base de données dans un endroit sécurisé sur votre ordinateur !<br>
-    **Pour copier sur un terminal, il vous suffit de sélectionner ce que vous voulez copier, puis de cliquer sur l'icône orange en bas à droite. Vous y retrouverez ce que vous venez de sélectionner, vous pouvez alors, à partir de cet endroit, copier le contenu.**
+    The command is going to install Runcloud. DO NOT leave the terminal before the process is done. It can take around 10 minutes.
+    Once the process is done, copy the MySQL login and password and paste it on a secure document on your computer!<br>
+    **To copy on a terminal, you have to select what you want to copy, then click on the orange icon at the bottom right. You will find what you just select. You can now from this place, copy the content.**
 
-!!! success "Vous avez maintenant accès à l'interface d'administration de votre instance Runcloud.io !"
+!!! success "You now have access to the admin interface of your Runcloud.io instance!"
 
 ***
 
