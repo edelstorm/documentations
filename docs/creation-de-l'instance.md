@@ -8,14 +8,6 @@
 
 ## Générer une paire de clés SSH
 
-{==
-
-**Améliorations nécessaires**<br> 
-1) Sur cette étape, il faut faire deux GIF : première partie (génération de la clé SSH) et deuxième partie (localisation du dossier SSH)<br> 
-2) Ralentis le tempo globale pour rentrer plus visible l'ensemble des opérations, teste x1.5<br> 
-
-==}
-
 [![Material for MkDocs](assets/images/aws/creation-instance/en/1.gif)](assets/images/aws/creation-instance/en/1.gif)
 
 ***
@@ -38,6 +30,10 @@ ssh-keygen -t rsa
 
 :    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
 :    * Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.
+
+***
+
+[![Material for MkDocs](assets/images/aws/creation-instance/en/1b.gif)](assets/images/aws/creation-instance/en/1b.gif)
 
 ***
 
@@ -115,11 +111,7 @@ ssh-keygen -t rsa
 
 ## IP Statique
 
-{==
-
-😭 Tu as oublié un GIF ici. Celui ou je clique sur Static IP pour le créer et l'attacher à l'instance.
-
-==}
+[![Material for MkDocs](assets/images/aws/creation-instance/en/12.gif)](assets/images/aws/creation-instance/en/12.gif)
 
 ***
 
@@ -141,7 +133,7 @@ ssh-keygen -t rsa
 
 ## Zone DNS
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/12.gif)](assets/images/aws/creation-instance/en/12.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/en/13.gif)](assets/images/aws/creation-instance/en/13.gif)
 
 ***
 
@@ -157,7 +149,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/13.gif)](assets/images/aws/creation-instance/en/13.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/en/14.gif)](assets/images/aws/creation-instance/en/14.gif)
 
 ***
 
@@ -174,7 +166,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/14.gif)](assets/images/aws/creation-instance/en/14.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/en/15.gif)](assets/images/aws/creation-instance/en/15.gif)
 
 ***
 
@@ -193,13 +185,6 @@ ssh-keygen -t rsa
 ***
 
 ## Options de l'instance
-
-{==
-
-**Améliorations nécessaires**<br> 
-Cropper les images<br> 
-
-==}
 
 !!! info "Tour d'horizon"
 

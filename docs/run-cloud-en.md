@@ -42,6 +42,13 @@
 :    * Copy/paste the static IP of your instance.
 :    * Put *AWS* as a Server Provider.
 :    * Click on {==*Connect this server*==}.
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/3b.gif)](assets/images/aws/run-cloud/en/3b.gif)
+
+***
+
 :    * RunCloud is going to generate an installation command on your server. Copy it by clicking on the green icon on the right.
 :    * Go back on Lightsail and connect to your SSH instance by clicking on *Connect*.
 :    * Once you are on the terminal, type the command below (make sure to type it, you can not copy/paste it). This will allow you to get admin right. Then hit <kbd>Enter</kbd>.
