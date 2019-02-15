@@ -76,4 +76,145 @@ sudo su
 
 ***
 
+## Application's creation
+
+!!! info "Initialization of the application to get Wordpress on your instance"
+
+    During this step, we are going to initialize an application allowing us to install Wordpress on your Ubuntu 16.04 Amazon Lightsail's instance.
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/6.gif)](assets/images/aws/run-cloud/en/6.gif)
+
+***
+
+**Come back to Runcloud.io, you should now have access to your dashboard**
+
+:    * In the left menu, click on {==*Web Application*==}.
+:    * Click on {==*Create Application*==}.
+:    * Name your application with the name of your future website.
+:    * Add the domain name that you use for your instance.
+:    * Choose the User by default *Runcloud*.
+:    * Leave the by default Public Path.
+:    * Select the most recent PHP version.
+:    * Select *NGINX + Apache2 Hybrid (You will be able to use .htaccess)*.
+:    * Choose the *Production* mode.
+:    * Let the *Advanced Settings* box unchecked, so you can keep the by default settings.
+:    * Click on {==*Add Web Application*==}.
+
+!!! success "An "application" space is now available on your Lightsail instance."
+
+***
+
+## Configurations
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/7.gif)](assets/images/aws/run-cloud/en/7.gif)
+
+***
+
+**Wordpress installation**
+
+:    * On the left menu, click on {==*Script Installer*==}.
+:    * Select the *Wordpress* script to install.
+:    * Click on {==*Install*==}.
+
+!!! success "Wordpress is now installed like a primary application on your Lightsail instance."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/8.gif)](assets/images/aws/run-cloud/en/8.gif)
+
+***
+
+**Domain name configuration**
+
+:    * In the left menu, click on {==*Domain Name*==}.
+:    * Add your domain name `www.exemple.com` to the existing list.
+:    * Click on {==*Attach Domain Name*==}.
+
+!!! success "The domain name configuration now works for Wordpress."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/9.gif)](assets/images/aws/run-cloud/en/9.gif)
+
+***
+
+**Creation of the security certificate**
+
+:    * In the left menu, click on {==*SSL/TLS*==}.
+:    * Check the box *Enable HSTS*.
+:    * Select *Let's Encrypt* as an SSL method.
+:    * Select *Http-01*.
+:    * Select *Live* as an environment.
+:    * Click on {==*Submit*==}.
+
+!!! success "Your security certificate is now approved for your domain name."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/9b.gif)](assets/images/aws/run-cloud/en/9b.gif)
+
+***
+
+**By default application**
+
+:    * At the top right, click on {==*More*==}.
+:    * Click on *Set as default Web Application*.
+:    * Go back to the homepage by clicking on *Back to Web Apps* in the left menu.
+
+***
+
+## Database
+
+!!! info "Database and user"
+
+    To work, your app (Wordpress) needs a database where your website and your user's information will be stocked.
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10.gif)](assets/images/aws/run-cloud/en/10.gif)
+
+***
+
+**Database creation**
+
+:    * In the left menu, click on {==*Database*==}.
+:    * Click on *Create Database*.
+:    * Name your database as you wish.
+:    * Leave the field *Collation* empty by default.
+:    * Click on {==*Add Database*==}.
+
+!!! success "The database is now available for Wordpress."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10b.gif)](assets/images/aws/run-cloud/en/10b.gif)
+
+***
+
+**Admin account creation**
+
+!!! warning "Wordpress logins"
+    
+    To access the Wordpress dashboard, you need an admin account that will have all the rights on your website. For this step, we will create the logins for this account and you must keep it in a secure place/file.
+
+:    * Click on *Create Database User*.
+:    * In *Database User*, create your login and keep it.
+:    * Generate a password and copy/paste it in a secure file with your login.
+:    * Click on *Add Database User*.
+
+!!! success "Your admin account has been created."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10c.gif)](assets/images/aws/run-cloud/en/10c.gif)
+
+***
+
+**Linking the admin account to your database**
+
+:    * Click on the green button *Attach User*.
+:    * Select your username in the drop-down list.
+:    * Click on *Attach User*.
+
+!!! success "Your admin account is now linked to your database."
+
+***
 
