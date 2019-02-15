@@ -27,6 +27,8 @@
 :    * Confirmez votre compte en cliquant sur le lien que vous venez de recevoir dans votre boîte mail.
 :    * Connectez-vous à votre compte avec vos identifiants en cliquant sur {==*Sign in to Dashboard*==}.
 
+!!! success "Vous avez un compte Runcloud.io"
+
 ***
 
 ## Installation
@@ -61,8 +63,8 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/5.gif)](assets/images/aws/run-cloud/en/5.gif)
 [![Material for MkDocs](assets/images/aws/run-cloud/en/4.gif)](assets/images/aws/run-cloud/en/4.gif)
+[![Material for MkDocs](assets/images/aws/run-cloud/en/5.gif)](assets/images/aws/run-cloud/en/5.gif)
 
 ***
 
@@ -75,4 +77,144 @@ sudo su
 
 ***
 
+## Création de l'application
 
+!!! info "Initialisation de l'apllication pour accueillir Wordpress sur votre instance"
+
+    Dans cette étape, nous allons initialiser une application pour y installez Wordpress sur votre instance Ubuntu 16.04 d'Amazon Lightsail.
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/6.gif)](assets/images/aws/run-cloud/en/6.gif)
+
+***
+
+**Revenez sur Runcloud.io, vous devriez avoir accès à votre interface d'administration**
+
+:    * Dans le menus de gauche, cliquez sur {==*Web Application*==}.
+:    * Cliquez sur {==*Create Application*==}.
+:    * Nommez votre application avec le nom de votre futur site web.
+:    * Ajoutez le nom de domaine que vous utilisez pour votre instance.
+:    * Choississez l'utilisateur par défaut *Runcloud*.
+:    * Laissez le chemin public par défaut.
+:    * Selectionnez la version de PHP la plus avancée.
+:    * Sélectionnez *NGINX + Apache2 Hybrid (You will be able to use .htaccess)*.
+:    * Choississez le mode *Production*.
+:    * Laissez la case *Advanced Settings* décochée pour obtenir l'ensemble des configurations par défaut.
+:    * Cliquez sur {==*Add Web Application*==}.
+
+!!! success "Un espace d'application est disponible sur votre instance Lightsail."
+
+***
+
+## Configurations
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/7.gif)](assets/images/aws/run-cloud/en/7.gif)
+
+***
+
+**Installation de Wordpress**
+
+:    * Une fois sur votre application, dans le menu de gauche, cliquez sur {==*Script Installer*==}.
+:    * Sélectionnez le script *Wordpress* à installer.
+:    * Cliquez sur {==*Install*==}.
+
+!!! success "Wordpress est installé comme application primaire de votre instance Lightsail"
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/8.gif)](assets/images/aws/run-cloud/en/8.gif)
+
+***
+
+**Configuration du nom de domaine**
+
+:    * Dans le menu de gauche, cliquez sur {==*Domain Name*==}.
+:    * Ajoutez votre nom de domaine `www.example.com` à la liste existante.
+:    * Cliquez sur {==*Attach Domain Name*==}.
+
+!!! success "La configuration du nom de domaine est correcte pour Wordpress."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/9.gif)](assets/images/aws/run-cloud/en/9.gif)
+
+***
+
+**Création du certificat de sécurité**
+
+:    * Dans le menu du gauche, cliquez sur {==*SSL/TLS*==}.
+:    * Cochez la cache *Enable HSTS*.
+:    * Cliquez sur *Let's Encrypt* comme méthode SSL.
+:    * Sélectionnez *Http-01* comme méthode d'autorisation.
+:    * Sélectionnez *Live* comme environnement.
+:    * Cliquez sur {==*Submit*==}.
+
+!!! success "Votre certificat de sécurité est maintenant valide pour votre nom de domaine."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/9b.gif)](assets/images/aws/run-cloud/en/9b.gif)
+
+***
+
+**Application par défaut**
+
+:    * En haut à droite, cliquez sur {==*More*==}.
+:    * Cliquez sur *Set as default Web Application*.
+:    * Revenez à l'accueil en cliquant sur *Back to Web Apps* dans le menu de gauche.
+
+***
+
+## Base de donnée
+
+!!! info "Database et utilisateur"
+
+    Pour fonctionner votre application Wordpress à besoin d'une base de donnée dans laquelle l'ensemble du site web et des informations de vos utilisateurs seront stockées.
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10.gif)](assets/images/aws/run-cloud/en/10.gif)
+
+***
+
+**Création de la base de donnée**
+
+:    * Dans le menu de gauche, cliquez sur {==*Database*==}.
+:    * Cliquez sur *Create Database*.
+:    * Nommez votre base de donnée comme vous le souhaitez.
+:    * Laissez le champs *Collation* vide par défaut.
+:    * Cliquez sur {==*Add Database*==}.
+
+!!! success "La base de donnée est disponible pour Wordpress."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10b.gif)](assets/images/aws/run-cloud/en/10b.gif)
+
+***
+
+**Création du compte administrateur**
+
+!!! warning "Identifiants Wordpress"
+    
+    Pour accéder à l'interface d'administration de Worpress, il vous faut un compte administrateur qui aura tout les droits sur le site web. Dans cette étape, nous créons les identifiants de ce compte que vous devez absolument stocker dans un endroit sécurisé.
+
+:    * Cliquez sur *Create Database User*.
+:    * Dans *Database User* créez votre identifiant et stockez-le.
+:    * Générer votre mot de passe et stockez-là.
+:    * Cliquez sur *Add Database User*.
+
+!!! success "Votre utilisateur administrateur est créé."
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/10c.gif)](assets/images/aws/run-cloud/en/10c.gif)
+
+***
+
+**Liaison du compte administrateur à votre base de donnée**
+
+:    * Cliquez sur le bouton vert *Attach User*.
+:    * Selectionnez votre utilisateur dans la liste déroulante.
+:    * Cliquez sur *Attach User*.
+
+!!! success "Votre utilisateur à lié à votre base de donnée."
+
+***
