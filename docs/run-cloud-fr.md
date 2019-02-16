@@ -218,3 +218,89 @@ sudo su
 !!! success "Votre compte administrateur est lié à votre base de données."
 
 ***
+
+## Accès Wordpress
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/11.gif)](assets/images/aws/run-cloud/en/11.gif)
+
+***
+
+**Initialisation de Wordpress**
+
+!!! info "Accéder à votre site web" 
+    Vous pouvez maintenant accéder à votre site ! Tappez votre nom de domaine `https://example.com` dans la barre d'addresse URL  de votre navigateur, vous verrez alors la page d'installation classique de Wordpress.
+
+:    * Sélectionnez la langue de votre choix.
+:    * Cliquez sur {==*C'est parti !*==}.
+:    * Nommez votre base de donnée.
+:    * Copiez/collez le nom d'utilisateur de la base de donnée Runcloud.io
+:    * Copiez/collez le mot de passe de la base de donnée Runcloud.io
+:    * Laissez par défaut *Database Host* à `Localhost`.
+:    * Changez votre préfixe de table par quelquechose d'autre que `wp_`.
+:    * Cliquez sur {==*Valider*==}.
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/12.gif)](assets/images/aws/run-cloud/en/12.gif)
+
+***
+
+**Réglages du site et de l'utilisateur admininistrateur**
+
+!!! info "Identifiants à retenir !" 
+    Dans cette étape vous allez créer les accès administrateur à votre site Wordpress. Retenez absolument ces informations dans un endroits sécurisés! 
+
+:    * Donnez un titre à votre site web.
+:    * Définissez votre nom d'utilisateur et retenez-le.
+:    * Générez un mot de passe et retenez-le.
+:    * Mettez votre addresse e-mail pour être au courant des activités de votre site web.
+:    * Laissez décochée la case *Search Engine Visibility*.
+:    * Cliquez sur {==*Install Wordpress*==}.
+
+!!! success "Vous avez maintenant accès à l'interface d'admnistration Wordpress de votre site web."
+
+***
+
+## Réglages Htaccess
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/13.gif)](assets/images/aws/run-cloud/en/13.gif)
+
+!!! info "Redirection du trafic" 
+    Le fichier Htaccess vous permets de définir des règles de redirection du trafic sur votre site web. Dans cette étape, nous allons ajouter une redirection essentielle, l'ensemble des utilisateurs tentant d'accèder à l'IP static de votre instance Lightsail seront automatiquement redirigés vers votre nom de domaine sécurisé.
+
+***
+
+**Modification du fichier Htaccess**
+
+:    * Dans le menu de gauche de votre interface Runcloud.io, cliquez sur {==*Web Application*==}.
+:    * Enquite, cliquez sur le nom de votre application.
+:    * Toujours dans le menu de gauche, cliquez sur {==*File Manager*==}.
+:    * Selectionnez le fichier `.htaccess` et cliquez sur *View/Edit*.
+:    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous :
+``` yaml
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111
+RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+```
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/13b.gif)](assets/images/aws/run-cloud/en/13b.gif)
+
+***
+
+**Edition de la commande de réécriture d'URL**
+
+:    * Dans votre interface Lightsail, copiez/collez l'adresse IP Static de votre instance.
+:    * Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.
+:    * Ensuite, éditez la commande avec votre IP Static et votre nom de domaine de cette façon :
+``` yaml
+RewriteCond %{HTTP_HOST} ^35\.180\.184\.49
+RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+```
+
+:    * Une fois la commande injectée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.
+:    * Cliquez sur Sauvegarder en haut ou appuyer sur <kbd>Ctrl</kbd> + <kbd>S</kbd> pour enregistrer vos modifications.
+
+!!! success "Félicitation ! Worpress est correctement installé et configuré pour supporter la création de votre site web."
+
+***
