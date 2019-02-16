@@ -218,3 +218,89 @@ sudo su
 
 ***
 
+## Wordpress acces
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/11.gif)](assets/images/aws/run-cloud/en/11.gif)
+
+***
+
+**Wordpress initialization**
+
+!!! info "Access to your website" 
+    You can now access your website! Type your domain name `https://example.com` on the URL search bar of your browser. You will then have access to the Wordpress installation page.
+
+:    * Select your language.
+:    * Click on the {==*Let's go!*==} button.
+:    * Name your database.
+:    * Copy/paste the Runcloud.io database name (voir étape Création du compte administrateur ANCRE).
+:    * Copy/paste the Runcloud.io database password (voir étape Création du compte administrateur).
+:    * Leave the "by default" *Database Host* to `Localhost`.
+:    * Change your prefix with something else than `wp_`, but keep the same format.
+:    * Click on {==*Submit*==}.
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/12.gif)](assets/images/aws/run-cloud/en/12.gif)
+
+***
+
+**Website and admin statuts configurations**
+
+!!! info "Save your login!" 
+    You are going to create admin access to your Wordpress website. You must keep your login/password combination in a secure place!
+
+:    * Give your website a title.
+:    * Chose a login and save it somewhere.
+:    * Generate a password and save it somewhere.
+:    * Add your e-mail address.
+:    * Leave the *Search Engine Visibility* box unchecked.
+:    * Click on {==*Install Wordpress*==}.
+:    * You can now {==*Log In*==} to your Wordpress.
+
+!!! success "You now have access to your Wordpress interface."
+
+***
+
+## Htaccess settings
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/13.gif)](assets/images/aws/run-cloud/en/13.gif)
+
+!!! info "Traffic redirection" 
+    The Htaccess file allows you to determine the traffic redirection rules for your website. With this step, any user trying to access the static IP of your Lightsail instance will be redirected to your secure domain name.
+
+***
+
+**Htaccess file changes**
+
+:    * In the left menu of your Runcloud.io interface, click on {==*Web Application*==}.
+:    * Then, click on your application name.
+:    * On the left menu, click on {==*File Manager*==}.
+:    * Select the `.htaccess` file and click on *View/Edit*.
+:    * Once on the editor, copy/past the re-writing rule below:
+``` yaml
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111
+RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+```
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/13b.gif)](assets/images/aws/run-cloud/en/13b.gif)
+
+***
+
+**The URL re-writing command editing**
+
+:    * On your Lightsail interface, copy the static IP address of your instance.
+:    * Paste the static IP in the Htaccess file so you can see it during this step.
+:    * Then, edit the "re-writing rule" you copied/pasted on the last step, with your static IP and domain name. Has the example below:
+``` yaml
+RewriteCond %{HTTP_HOST} ^35\.180\.184\.49
+RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+```
+
+:    * Once this step is done, erase the static IP and the spaces you created, to make everything more readable.
+:    * Click on Save at the top of the windows or hit <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
+
+!!! success "Congratulations! Wordpress is now correctly installed and set to support your website creation."
+
+***
