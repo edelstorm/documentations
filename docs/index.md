@@ -44,48 +44,3 @@ Nous utiliserons trois outils pour créer votre site :
 ***
 Voilà ! vous pouvez désormais passer à la [première étape de la création de votre site][4].
 [4]: creation-du-compte.md
-Toutefois, si vous rencontrez un mot que vous ne comprenez pas, vous pouvez faire un tour dans le Glossaire ci-dessous !
-***
-
-## Glossaire technique
-
-Voici un glossaire de terme que vous allez rencontrer pendant cette formation. 
-
-N’hésitez pas à l'utiliser pendant votre formation. Pour ce faire, vous pouvez utiliser le raccourci : 
-
-* Sur un Mac : <kbd>Cmd ⌘</kbd> + <kbd>f</kbd> 
-  
-* Sur un Windows : <kbd>Ctrl</kbd> + <kbd>f</kbd>
-
-Ce raccourcie active la fonction “recherche“. 
-Un rectangle blanc avec un apparaît à droite sur votre fenêtre de navigation.
-
-**PHOTO**
-
-Tapez le mot dont vous voulez connaître la signification et appuyer sur la touche “entrer“. Appuyez plusieurs fois jusqu’à ce que ce que vous cherchez s’affiche à l’écran. 
-
-**GIF**
-
-Si rien ne s’affiche, oups, c’est que nous n’avons pas encore référencé ce mot :wink:
-
-***
-
-**Serveur** : Un serveur est ordinateur virtuel à distance qui permet également de recevoir du courrier électronique, de stocker des données et d’accéder au web de façon générale.
-
-**Nom de domaine** : C’est l’adresse à laquelle les utilisateurs pourront se rendre pour visiter votre site. Par exemple, le nom de domaine d’Edelstorm est : edelstorm.io.
-
-**Terminal** : 
-
-**IP static** : 
-
-**Zone DNS** : 
-
-**SSL** : 
-
-**SSH** : 
-
-**HTTPS** :
-
-**Innstance** : 
-
-**Apache** : 

@@ -27,6 +27,24 @@
 :    * Configure your account by clicking on the link you just received on your email box.
 :    * Connect to your account with your login and passwords by clicking on {==*Sign in to Dashboard*==}.
 
+!!! success "You now have a Runcloud.io account!"
+
+***
+
+[![Material for MkDocs](assets/images/aws/run-cloud/en/3a.gif)](assets/images/aws/run-cloud/en/3a.gif)
+
+***
+
+**Choose your plan**
+
+:    * At the top right, click on the green button *Upgrade Now*.
+:    * Click on the green button *Change plan*.
+:    * Select the *Basic* plan. We advise you to select the yearly payement method, it will be like payed 6,66$ per month instead of 8$ per month. But it's up yo you.
+:    * Click on the green button *Choose plan*.
+:    * Click on the big blue button on the left, {==*Add a new payement method*==}.
+:    * You can now choose between paying by PayPal or by card.
+
+
 ***
 
 ## Installation

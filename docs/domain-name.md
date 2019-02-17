@@ -9,7 +9,7 @@
 **Domain name system (DNS) in the cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
 :    * At the top right of the page, select your geographic zone.
-:    * then in the research barnn, type {==*Route 53*==} and click on the result.
+:    * Then in the research bar, type {==*Route 53*==} and click on the result.
 :    * Choose the option on the right: {==*Register domain name*==}.
 
 ***
@@ -22,7 +22,7 @@
 
 **Check the domain name availability**
 
-:    * Type your domain name and choose an extension (GLOSSARY link) for your future website.
+:    * Type your domain name and choose an <a href="/help/glossary" target="_blank">extension</a> for your future website.
 :    * Once you have chosen an available domain name, add it to the cart, then click on {==*Continue*==}.
 
 ***
@@ -61,7 +61,7 @@
 
 **Wait while AWS register your domain name**
 
-:    * Registering your domain name can take up to 15 minutes.
+:    * Registering your domain name can take up to 15 minutes. Take the time to stretch your legs.  🚶‍♀️ 🤸‍♀️
 :    * Click on {==*Registered domains*==}, your domain name will appear when the registration is complete.
 
 ***

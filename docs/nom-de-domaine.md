@@ -9,7 +9,7 @@
 **Système de noms de domaine (DNS) dans le cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
 :    * En haut à droite de la console, sélectionnez votre zone géographique.
-:    * Puis, dans la zone de recherche tapez {==*Route 53*==} et cliquez dessus.
+:    * Puis, dans la zone de recherche, tapez {==*Route 53*==} et cliquez dessus.
 :    * Choississez l'option de droite {==*Enregistrer un nom de domaine*==}.
 
 ***
@@ -22,7 +22,7 @@
 
 **Vérifiez la disponibilité de votre nom de domaine**
 
-:    * Tapez le nom de domaine et séléctionnez l'extension (LIEN GLOSSAIRE) de votre futur site web.
+:    * Tapez le nom de domaine que vous avez choisi, puis sélectionnez <a href="/aide/glossaire" target="_blank">l'extension</a> de votre futur site web.
 :    * Une fois votre choix fait selon les disponibilités, ajoutez le nom de domaine au panier, puis cliquez sur {==*Continuer*==}.
 
 ***
@@ -48,7 +48,7 @@
 
 **Vérifiez vos informations**
 
-:    * Cocher la case pour accepter votre contrat d'enregistrement de nom de domaine AWS.
+:    * Cocher la case pour accepter le contrat d'enregistrement de nom de domaine AWS.
 :    * Cliquez sur {==*Terminer l'achat*==}.
 
 ***
@@ -61,7 +61,7 @@
 
 **Patientez le temps qu'AWS enregistre votre nom de domaine**
 
-:    * Un enregistrement peut prendre jusqu'à 15 minutes.
+:    * Un enregistrement peut prendre jusqu'à 15 minutes. Vous pouvez prendre le temps de vous étirer un peu. 🚶‍♀️ 🤸‍♀️
 :    * Cliquez sur {==*Domaine enregistré*==}, votre nom de domaine apparaîtra lorsque l'enregistrement sera terminé.
 
 ***
@@ -82,4 +82,4 @@ La suppression de votre zone hébergée par défaut permettra par la suite à vo
 ***
 
 !!! success "Félicitations, l'enregistrement de votre nom de domaine est un succès !"
-    Nous reviendrons une dernière fois sur cette interface un peu plus tard, garder cette page ouverte !
+    Nous reviendrons une dernière fois sur cette interface un peu plus tard, gardez cette page ouverte !
