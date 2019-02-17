@@ -31,6 +31,22 @@
 
 ***
 
+[![Material for MkDocs](assets/images/aws/run-cloud/en/3a.gif)](assets/images/aws/run-cloud/en/3a.gif)
+
+***
+
+**Choisir votre offre**
+
+:    * En haut à droite, cliquez sur le bouton vert *Upgrade Now*.
+:    * Cliquez sur le bouton vert *Change plan*.
+:    * Sélectionnez l'offre *Basic*. Nous vous conseillons de sélectionner le mode de paiement par année (Yearly). Cela vous reviendra à 6,66$ par mois au lieu de 8$. Mais c'est comme vous préférez. 
+:    * Cliquez sur le bouton vert *Choose plan*.
+:    * Cliquez sur le gros bouton bleu à gauche {==*Add a new payement method*==}.
+:    * Vous pouvez maintenant choisir de payer par PayPal ou par carte.
+
+
+***
+
 ## Installation
 
 [![Material for MkDocs](assets/images/aws/run-cloud/en/3.gif)](assets/images/aws/run-cloud/en/3.gif)

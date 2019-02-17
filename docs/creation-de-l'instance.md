@@ -1,6 +1,6 @@
 # Création de l'instance <small>- Lightsail</small>
 
-!!! tip "Copier / coller facilement les commandes du tutoriel en cliquant sur l'icône de droite."
+!!! tip "Copiez / collez facilement les commandes du tutoriel en cliquant sur l'icône de droite."
 
     ``` sh
     Copiez cette phrase pour tester.
@@ -14,8 +14,12 @@
 
 **Sécurisation des communications entre votre ordinateur et votre futur serveur**
 
-:    * En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
-:    * Une fois dans votre terminal, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
+:    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
+:    * {==Pour les ordinateurs Windows==} Plusieurs solutions en fonction de la version de votre OS. 
+        * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche *cmd*. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
+        * Ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez *cmd* dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
+
+:    * Une fois dans votre terminal, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
 ssh-keygen -t rsa
 ```
@@ -24,8 +28,8 @@ ssh-keygen -t rsa
 
 !!! note "À savoir"
 
-    Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas voir se former sur votre écran.<br>
-    C'est comme si n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper.<br> 
+    Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas le voir se former sur votre écran.<br>
+    C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper.<br> 
     Vous devez donc le définir à l'aveugle !
 
 :    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.

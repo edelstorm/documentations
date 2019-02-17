@@ -1,7 +1,7 @@
 # Sign up to <small>- AWS</small>
 
 !!! tip "Advice"
-    At each step, you will find instructions but also images or animations. Use that to better understand what you have to do.
+    At each step, you will find instructions but also images or animations. Use those to better understand what you have to do.
 
 ## Identification
 
@@ -15,12 +15,12 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-**Fill out the sign-up form:**
+**Fill out the sign-up form**
 
 :    * Put an e-mail address that you currently use.
-:    * Create a password that as at least 8 characters, one capital letter, one number and a non-alphanumeric character like: <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>
+:    * Create a password that has at least 8 characters, one capital letter, one number and a non-alphanumeric character like: <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>.
 :    * Put your password a second time to be sure that you wrote it without any mistake.
-:    * Choose an name for your AWS account. It can be your name, your company's name or your future website's name.
+:    * Choose a name for your AWS account. It can be your name, your company's name or your future website's name.
 ***
 
 ## Contact
@@ -29,14 +29,14 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-**Fill out the contact form:**
+**Fill out the contact form**
 
 :    * Choose the account type.
 :    * Put your full name.
 :    * Put your phone number with the telephone area code of your country.
 :    * Select your country.
 :    * Put your address, city, state, and postcode.
-:    * Check the box to agree with you <a href="https://aws.amazon.com/fr/agreement/" target="_blank">client contract</a>.
+:    * Check the box to agree with your <a href="https://aws.amazon.com/fr/agreement/" target="_blank">client contract</a>.
 :    * Click on {==*Create an account and continue*==}.
 
 ***
@@ -47,7 +47,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 !!! info "Things you need to know about the AWS offer"
 
     1. Opening an account is free. The costs will be depending on the services you use.
-    2. The first month of using your instance (link glossary), that will allow you to have your website online, is free.
+    2. The first month of using your <a href="/help/glossary" target="_blank">instance</a>, that will allow you to put your website online, is free.
     3. You will need to buy a domain name in the process of this training.
     4. You can easily have a look at the details of your <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">billing</a>.
     5. At any moment, you can leave AWS without any hidden costs.
@@ -56,7 +56,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-**Fill the credit card form:**
+**Fill the credit card form**
 
 :    * Put your card number.
 :    * Put the expiration date.
@@ -70,14 +70,14 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 [![Material for MkDocs](assets/images/aws/inscription/4.gif)](assets/images/aws/inscription/4.gif)
 
-!!! warning "Comfirm your number"
+!!! warning "Confirm your number"
 
-    1. Have your phone next to you, in the next step, you will receive an automatic call from AWS.
-    2. You will have to enter 4 numbers that will appear on your computer screen, on your phone.
+    1. Have your phone near you because, in the next step, you will receive an automatic call from AWS.
+    2. You will have to enter 4 numbers on your phone, that will appear on your computer screen.
 
 ***
 
-**Phone number confirmation:**
+**Phone number confirmation**
 
 Now, AWS is going to check that you are a real person and not a robot.
 
@@ -116,7 +116,7 @@ You can now click on {==Continue==}.
 
 !!! warning "Possible incident"
 
-   If, for any reason you hang up the phone or get disconnected before you could type the code on your phone, keep the page open. Wait a few minutes, AWS is going to detect that a problem occurred and will ask you to try again. You will just have to click on {==Retry==}.
+      If, for any reason, you hang up the phone or get disconnected before you could type the code on your phone, keep the page open. Wait a few minutes, AWS is going to detect that a problem occurred and will ask you to try again. You will just have to click on {==Retry==}.
 
 ## Basic Plan
 
@@ -149,4 +149,4 @@ You can now click on {==Continue==}.
 [![Material for MkDocs](assets/images/aws/inscription/10.png)](assets/images/aws/inscription/10.png)
 
 !!! success "Welcome on your Amazon Web Services administration console!"
-    Don't forget to go check your e-mails and click on the link sent by AWS to verify your e-mail!
+    Don't forget to go check your e-mails and to click on the link sent by AWS to verify your e-mail!

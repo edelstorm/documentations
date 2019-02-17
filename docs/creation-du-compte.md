@@ -15,12 +15,13 @@
 
 ***
 
-**Remplissez les champs du formulaire de création du compte :**
+**Remplissez les champs du formulaire de création du compte**
 
 :    * Renseignez une adresse e-mail valide à laquelle vous avez un accès régulier.
-:    * Créez un mot de passe fort contenant au moins 8 caractères, une majuscule, un chiffre et un symbole non alphanumérique tel que <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>
+:    * Créez un mot de passe fort contenant au moins 8 caractères, une majuscule, un chiffre et un symbole non alphanumérique tel que : <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>.
 :    * Renseignez votre mot de passe une deuxième fois pour vérifier que vous l’avez correctement écrit.
 :    * Définissez un identifiant pour votre compte AWS. Cela peut être votre nom, celui de votre entreprise ou de votre futur site web.
+:    * Cliquez sur {==*Continuer*==}
 
 ***
 
@@ -30,7 +31,7 @@
 
 ***
 
-**Remplissez les champs du formulaire de contact pour votre facturation AWS :**
+**Remplissez les champs du formulaire de contact pour votre facturation AWS**
 
 :    * Choisissez votre type de compte.
 :    * Entrez votre nom et votre prénom.
@@ -47,23 +48,25 @@
 
 !!! info "À savoir sur l'offre AWS"
 
-    1. L'ouverture de votre compte AWS est gratuite, le coût est en fonction de l'utilisation des différents services.
-    2. Le premier mois d’utilisation de l'instance (lien glossaire) qui supportera votre futur site web est offert.
+    1. L'ouverture de votre compte AWS est gratuite. Le prix sera calculé en fonction de votre l'utilisation des différents services.
+    2. Le premier mois d’utilisation de l'<a href="/aide/glossaire" target="_blank">instance</a> qui supportera votre futur site web est offert.
     3. Vous aurez besoin d'acheter votre nom de domaine pour mener à bien cette formation.
     4. Vous pouvez facilement consulter les détails de votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">facturation</a>.
     5. Vous pouvez à tout moment quitter AWS sans aucun coût additionnel.
+
+***
 
 [![Material for MkDocs](assets/images/aws/inscription/3.gif)](assets/images/aws/inscription/3.gif)
 
 ***
 
-**Remplissez les champs du formulaire avec vos informations bancaires :**
+**Remplissez les champs du formulaire avec vos informations bancaires**
 
-:    * Entrez votre numéro de carte de crédit.
+:    * Entrez votre numéro de carte.
 :    * Entrez sa date d'expiration.
 :    * Entrez le nom et le prénom du détenteur de la carte.
-:    * Selectionner votre adresse de facturation.
-:    * Soumettez ces informations de façon sécurisée en cliquant sur {==*Secure Submit*==}
+:    * Sélectionner votre adresse de facturation.
+:    * Soumettez ces informations de façon sécurisée en cliquant sur le {==*bouton jaune*==}.
 
 ***
 
@@ -78,13 +81,13 @@
 
 ***
 
-**Vérifier votre numéro de téléphone :**
+**Vérifier votre numéro de téléphone**
 
 Lors de cette étape, AWS vérifie que vous êtes une véritable personne et non un robot.
 
 :    * Sélectionnez votre pays et renseignez votre numéro de téléphone.
 :    * Complétez le Captcha de sécurité en reproduisant la suite de lettres et de chiffres que vous voyez à l’écran.
-:    * Cliquez sur {==*Contact me*==}
+:    * Cliquez sur {==*Contactez moi*==}
 
 ***
 
@@ -127,8 +130,8 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}.
 
 **Vous êtes désormais sur la page qui présente des différentes offres de support**
 
-:    * Choisissez la première offre *Basic Plan* en cliquant sur {==Free==}.
-:    * Puis, cliquez sur {==Sign in to the Console==}.
+:    * Choisissez la première offre *Basic Plan* en cliquant sur {==Gratuit==}.
+:    * Puis, cliquez sur {==Se connecter à la Console==}.
 
 ***
 
