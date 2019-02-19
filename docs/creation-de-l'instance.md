@@ -8,7 +8,7 @@
 
 ## Générer une paire de clés SSH
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/1.gif)](assets/images/aws/creation-instance/en/1.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/1.gif)](assets/images/aws/creation-instance/fr/1.gif)
 
 ***
 
@@ -37,7 +37,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/1b.gif)](assets/images/aws/creation-instance/en/1b.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/1b.gif)](assets/images/aws/creation-instance/fr/1b.gif)
 
 ***
 
@@ -57,7 +57,7 @@ ssh-keygen -t rsa
 
 ## Création de l'instance
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/2.gif)](assets/images/aws/creation-instance/en/2.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/2.gif)](assets/images/aws/creation-instance/fr/2.gif)
 
 ***
 
@@ -66,6 +66,10 @@ ssh-keygen -t rsa
 :    * Rendez-vous sur votre console d'administration AWS, tapez *Lightsail* dans la barre recherche et cliquez sur ce service.
 :    * Sélectionnez la langue que vous souhaitez pour votre interface.
 :    * Cliquez sur {==Créer une instance==}.
+
+***
+
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/2a.gif)](assets/images/aws/creation-instance/fr/2a.gif)
 
 ***
 
@@ -78,7 +82,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/3.gif)](assets/images/aws/creation-instance/en/3.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/3.gif)](assets/images/aws/creation-instance/fr/3.gif)
 
 ***
 
@@ -99,14 +103,18 @@ ssh-keygen -t rsa
 
 ## Réglages du Firewall
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/11.gif)](assets/images/aws/creation-instance/en/11.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/11.gif)](assets/images/aws/creation-instance/fr/11.gif)
 
 ***
 
 **Ouverture des ports HTTPS & FTP**
 
 :    * Cliquez sur votre instance et rendez-vous dans la section *Mise en réseau*.
-:    * Ouvrez les ports HTTPS et FTP (34210) pour sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
+:    * Cliquez sur *Ajouter un autre élément*.
+:    * Changez le *Personalisé* en *HTTPS*.
+:    * Cliquez sur *Ajouter un autre élément*.
+:    * Laissez la partie *Personalisé* et ajoutez juste *34210* dans la colonne *Plage de ports*. 
+:    * Cette action permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
 :    * Cliquez sur {==Sauvegarder==}.
 
 !!! success "Votre instance est correctement configurée pour la suite de ce tutoriel"
@@ -115,7 +123,7 @@ ssh-keygen -t rsa
 
 ## IP Statique
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/12.gif)](assets/images/aws/creation-instance/en/12.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/12.gif)](assets/images/aws/creation-instance/fr/12.gif)
 
 ***
 
@@ -137,7 +145,7 @@ ssh-keygen -t rsa
 
 ## Zone DNS
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/13.gif)](assets/images/aws/creation-instance/en/13.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/13.gif)](assets/images/aws/creation-instance/fr/13.gif)
 
 ***
 
@@ -153,7 +161,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/14.gif)](assets/images/aws/creation-instance/en/14.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/14.gif)](assets/images/aws/creation-instance/fr/14.gif)
 
 ***
 
@@ -170,7 +178,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/15.gif)](assets/images/aws/creation-instance/en/15.gif)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/15.gif)](assets/images/aws/creation-instance/fr/15.gif)
 
 ***
 
