@@ -194,7 +194,7 @@ ssh-keygen -t rsa
 
     Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous pourrez découvrir de nombreuses options que nous allons vous présenter ci-dessous.
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/4.png)](assets/images/aws/creation-instance/en/4.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/4.png)](assets/images/aws/creation-instance/fr/4.png)
 
 ***
 
@@ -206,7 +206,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/5.png)](assets/images/aws/creation-instance/en/5.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/5.png)](assets/images/aws/creation-instance/fr/5.png)
 
 ***
 
@@ -217,7 +217,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/6.png)](assets/images/aws/creation-instance/en/6.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/6.png)](assets/images/aws/creation-instance/fr/6.png)
 
 ***
 
@@ -227,7 +227,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/7.png)](assets/images/aws/creation-instance/en/7.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/7.png)](assets/images/aws/creation-instance/fr/7.png)
 
 ***
 
@@ -237,7 +237,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/8.png)](assets/images/aws/creation-instance/en/8.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/8.png)](assets/images/aws/creation-instance/fr/8.png)
 
 ***
 
@@ -247,7 +247,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/9.png)](assets/images/aws/creation-instance/en/9.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/9.png)](assets/images/aws/creation-instance/fr/9.png)
 
 ***
 
@@ -257,7 +257,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/en/10.png)](assets/images/aws/creation-instance/en/10.png)
+[![Material for MkDocs](assets/images/aws/creation-instance/fr/10.png)](assets/images/aws/creation-instance/fr/10.png)
 
 ***
 
