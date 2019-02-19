@@ -102,6 +102,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Amazon Web Services: index.md
+  - Amazon Web Services EN: AWS-introduction.md
   - Création du compte: creation-du-compte.md
   - Sign Up: sign-up.md
   - Nom de domaine: nom-de-domaine.md

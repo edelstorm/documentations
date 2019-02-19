@@ -4,7 +4,7 @@
 
 !!! info "Runcloud.io"
 
-    Runcloud est un service vous proposant une offre gratuite vous permettant de déployer des applications PHP en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud pour y installer et configurer Wordpress.
+    Runcloud est un service vous permettant de déployer des applications PHP facilement et en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud pour y installer et configurer Wordpress.
 
 [![Material for MkDocs](assets/images/aws/run-cloud/en/1.gif)](assets/images/aws/run-cloud/en/1.gif)
 
