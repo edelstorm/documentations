@@ -66,6 +66,9 @@ ssh-keygen -t rsa
 :    * Go on your AWS administration console, type *Lightsail* in the search bar and click on this service.
 :    * Choose the language you prefer.
 :    * Click on {==Create an instance==}.
+***
+
+[![Material for MkDocs](assets/images/aws/creation-instance/en/2a.gif)](assets/images/aws/creation-instance/en/2a.gif)
 
 ***
 
@@ -108,7 +111,7 @@ ssh-keygen -t rsa
 :    * Click on *add another*.
 :    * Change the *Custom* to *HTTPS*.
 :    * Click on *add another*.
-:    * Leave the *Custom* to *HTTPS* and add *34210* on *Port range*. 
+:    * Leave the *Custom* and add *34210* on *Port range*. 
 :    * This will secure the communication between your users, the extern's apps and your instance.
 :    * Click on {==Save==}.
 
