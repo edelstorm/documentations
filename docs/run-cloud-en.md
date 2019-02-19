@@ -4,7 +4,7 @@
 
 !!! info "Runcloud.io"
 
-    Runcloud is a service that offers a free and secure way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud interface so we can install and configure Wordpress on it.
+    Runcloud is a service that offers a secure and easy way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud interface so we can install and configure Wordpress on it.
 
 [![Material for MkDocs](assets/images/aws/run-cloud/en/1.gif)](assets/images/aws/run-cloud/en/1.gif)
 
@@ -39,9 +39,9 @@
 
 :    * At the top right, click on the green button *Upgrade Now*.
 :    * Click on the green button *Change plan*.
-:    * Select the *Basic* plan. We advise you to select the yearly payement method, it will be like payed 6,66$ per month instead of 8$ per month. But it's up yo you.
+:    * Select the *Basic* plan. We advise you to select the yearly payment method, it will be like paid 6,66$ per month instead of 8$ per month. But it's up to you.
 :    * Click on the green button *Choose plan*.
-:    * Click on the big blue button on the left, {==*Add a new payement method*==}.
+:    * Click on the big blue button on the left, {==*Add a new payment method*==}.
 :    * You can now choose between paying by PayPal or by card.
 
 
@@ -56,7 +56,7 @@
 **Install Runcloud on your Lightsail instance**
 
 :    * Click on *Connect a New Server*.
-:    * Name your server with your websote name.
+:    * Name your server with your website name.
 :    * Copy/paste the static IP of your instance.
 :    * Put *AWS* as a Server Provider.
 :    * Click on {==*Connect this server*==}.
@@ -262,7 +262,7 @@ sudo su
 
 ***
 
-**Website and admin statuts configurations**
+**Website and admin status configurations**
 
 !!! info "Save your login!" 
     You are going to create admin access to your Wordpress website. You must keep your login/password combination in a secure place!

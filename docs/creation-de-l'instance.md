@@ -17,7 +17,7 @@
 :    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
 :    * {==Pour les ordinateurs Windows==} Plusieurs solutions en fonction de la version de votre OS. 
         * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche *cmd*. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
-        * Ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez *cmd* dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
+        * Soit, ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez *cmd* dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
 
 :    * Une fois dans votre terminal, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
@@ -143,7 +143,7 @@ ssh-keygen -t rsa
 
 **Association de votre instance à votre nom de domaine**
 
-:    * Cliquez sur *Accueil* en haut de votre interface Lightsail, puis rendez vous dans l'onglet *Mise en réseau*.
+:    * Cliquez sur *Accueil* en haut de votre interface Lightsail, puis rendez-vous dans l'onglet *Mise en réseau*.
 :    * Cliquez sur {==Créer une zone DNS==}.
 :    * Dans le champ, spécifiez votre nom de domaine.
 :    * Vous pouvez associer des tags d'identifications à cette zone DNS.
@@ -161,10 +161,10 @@ ssh-keygen -t rsa
 
 :    * Cliquez sur *Ajouter un enregistrement*.
 :    * Ajoutez un premier enregistrement de type A pour `@.VotreNomDeDomaine.com` pointant vers votre IP statique. <br>
-       **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer.
+       **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
 :    * Cliquez à nouveau sur *Ajouter un enregistrement*
 :    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br>
-       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer.
+       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
 
 !!! success "L'IP statique de votre instance pointe vers votre nom de domaine !"
 
@@ -174,14 +174,14 @@ ssh-keygen -t rsa
 
 ***
 
-**Injection des nouveaux serveurs de nom pour votre nom de domaine**
-:    * Nous sommes toujours sur la même page. Sous les enregistrements se trouve une section *Nom de serveurs*. Il s'agit de vos nouveaux   noms de serveurs pour cette zone DNS. <br>
+**Injection des nouveaux noms de serveurs pour votre nom de domaine**
+:    * Nous sommes toujours sur la même page. Sous les enregistrements se trouve une section *Nom de serveurs*. Il s'agit de vos nouveaux noms de serveurs pour cette zone DNS. <br>
     **Copiez le premier**.
 :    * Ouvrez dans un nouvel onglet votre console d'administration AWS. Vous pouvez facilement y accéder en faisant un clic droit, ouvrir dans un nouvel onglet, sur *AWS* en haut à droite de votre interface Lightsail.
 :    * Cherchez le service *Route 53* dans la barre de recherche et cliquez dessus.
 :    * Sur la gauche de l'interface, cliquez sur *Domaines enregistrés*.
 :    * Cliquez sur votre nom de domaine.
-:    * Sur la droite de l'interface, cliquez sur *Ajouter ou editer les noms de serveurs*, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
+:    * Sur la droite de l'interface, cliquez sur *Ajouter ou éditer les noms de serveurs*, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
 :    * Cliquez sur {==Mettre à jour==}.
 
 !!! success "Les serveurs de votre zone DNS correspondent à votre nom de domaine !"
@@ -192,7 +192,7 @@ ssh-keygen -t rsa
 
 !!! info "Tour d'horizon"
 
-    Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous découvrirez de nombreuses options que nous allons vous présenter ci-dessous.
+    Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous pourrez découvrir de nombreuses options que nous allons vous présenter ci-dessous.
 
 [![Material for MkDocs](assets/images/aws/creation-instance/en/4.png)](assets/images/aws/creation-instance/en/4.png)
 

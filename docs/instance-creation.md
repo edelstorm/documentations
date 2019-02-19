@@ -14,7 +14,11 @@
 
 **Securing communications between your computer and your future server**
 
-:    * At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type *Terminal* then hit <kbd>Enter</kbd>.
+:    * {==For the Mac users==} At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type *Terminal* then hit <kbd>Enter</kbd>.
+:    * {==For the Windows users==} Two ways depending on your OS version. 
+        * In the *Start* menu, type *cmd* in the search bar. Select the first result (Command Prompt), by doing a click right and select the *execute as an administrator* mode.
+        * Or, open your computer search bar from your desktop by typing <kbd>⊞Win</kbd> + <kbd>S</kbd>. Then, type *cmd* in the research field. Select the first result (Command Prompt), by doing a click right and select the *execute as an administrator* mode.
+
 :    * When you are on your terminal, type this command and hit <kbd>Enter</kbd>.
 ``` sh
 ssh-keygen -t rsa
@@ -105,7 +109,7 @@ ssh-keygen -t rsa
 :    * Change the *Custom* to *HTTPS*.
 :    * Click on *add another*.
 :    * Leave the *Custom* to *HTTPS* and add *34210* on *Port range*. 
-:    * This will secure the communication between your users, the externs apps and your instance.
+:    * This will secure the communication between your users, the extern's apps and your instance.
 :    * Click on {==Save==}.
 
 !!! success "Your instance is correctly configured for the rest of this tutorial!"
@@ -127,7 +131,7 @@ ssh-keygen -t rsa
 :    * Go in the *Networking* section of your instance and click on *Attach a Static IP*.
 :    * Select the same geographic zone than the one you chose for your instance.
 :    * Attach your instance to this Static IP.
-:    * Name your static IP this way, with YOUR domain name : *StaticIp-YourDomainName*.
+:    * Name your static IP this way, with YOUR domain name: *StaticIp-YourDomainName*.
 :    * Click on {==Create==}.
 
 !!! success "Your instance now has a unique IP!"
@@ -176,7 +180,7 @@ ssh-keygen -t rsa
 **Adding new name servers for your domain name**
 :    * We are still on the same page. Under the records, you can see the *Nameservers*. Those are your new name servers for your DNS zone.<br>
     **Copy the first**.
-:    * Open your AWS homepage on a new tab. You can easely do so by doing a right clic, open in a new tap on *AWS* at the top right of your page. 
+:    * Open your AWS homepage on a new tab. You can easily do so by doing a right click, open in a new tap on *AWS* at the top right of your page. 
 :    * Search for *Route 53* on the search bar and click on it.
 :    * On the left side of the interface, click on *Registered domains*.
 :    * Click on your domain name.
