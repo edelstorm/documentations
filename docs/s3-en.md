@@ -58,7 +58,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/en/3.gif)](assets/images/aws/en/3.gif)
+[![Material for MkDocs](assets/images/aws/s3/en/3.gif)](assets/images/aws/s3/en/3.gif)
 
 ***
 

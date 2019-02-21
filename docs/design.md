@@ -32,8 +32,8 @@ symbols ((c), (tm), (r)) and fractions (1/2, 1/4, ...).
 * [Admonition][26]
 * [Codehilite][27]
 
-  [26]: extensions/admonition.md
-  [27]: extensions/codehilite.md
+  [26]: link
+  [27]: link
 
 ``` sh
 python --version

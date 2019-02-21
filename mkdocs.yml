@@ -118,8 +118,6 @@ nav:
     - Glossaire: aide/glossaire.md
   - Help:
     - Glossary: help/glossary.md
-  - Extensions:
-    - Metadata: extensions/metadata.md
 
 # Google Analytics
 google_analytics:
