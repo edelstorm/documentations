@@ -11,7 +11,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/inscription/1.gif)](assets/images/aws/inscription/1.gif)
+<p><a href="../assets/images/aws/inscription/1.gif" target="_blank"><img alt="Creation du Compte Identifiants Amazon Web Services" src="../assets/images/aws/inscription/1.gif"></a></p>
 
 ***
 
@@ -27,7 +27,7 @@
 
 ## Contact
 
-[![Material for MkDocs](assets/images/aws/inscription/2.gif)](assets/images/aws/inscription/2.gif)
+<p><a href="../assets/images/aws/inscription/2.gif" target="_blank"><img alt="Creation du Compte Informations de Contact Amazon Web Services" src="../assets/images/aws/inscription/2.gif"></a></p>
 
 ***
 
@@ -56,7 +56,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/inscription/3.gif)](assets/images/aws/inscription/3.gif)
+<p><a href="../assets/images/aws/inscription/3.gif" target="_blank"><img alt="Creation du Compte Informations de Paiment Amazon Web Services" src="../assets/images/aws/inscription/3.gif"></a></p>
 
 ***
 
@@ -72,7 +72,7 @@
 
 ## Vérification
 
-[![Material for MkDocs](assets/images/aws/inscription/4.gif)](assets/images/aws/inscription/4.gif)
+<p><a href="../assets/images/aws/inscription/4.gif" target="_blank"><img alt="Creation du Compte Vérification du téléphone Amazon Web Services" src="../assets/images/aws/inscription/4.gif"></a></p>
 
 !!! warning "Valider son numéro"
 
@@ -93,7 +93,7 @@ Lors de cette étape, AWS vérifie que vous êtes une véritable personne et non
 
 ### Appel d'AWS
 
-[![Material for MkDocs](assets/images/aws/inscription/5.gif)](assets/images/aws/inscription/5.gif)
+<p><a href="../assets/images/aws/inscription/5.gif" target="_blank"><img alt="Creation du Compte Appel Amazon Web Services" src="../assets/images/aws/inscription/5.gif"></a></p>
 
 ***
 
@@ -105,7 +105,7 @@ Lors de cette étape, AWS vérifie que vous êtes une véritable personne et non
 
 ### Confirmation
 
-[![Material for MkDocs](assets/images/aws/inscription/6.gif)](assets/images/aws/inscription/6.gif)
+<p><a href="../assets/images/aws/inscription/6.gif" target="_blank"><img alt="Creation du Compte Confirmation Amazon Web Services" src="../assets/images/aws/inscription/6.gif"></a></p>
 
 ***
 
@@ -116,15 +116,15 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}.
 
 ***
 
-[![Material for MkDocs](assets/images/aws/inscription/7.png)](assets/images/aws/inscription/7.png)
+<p><a href="../assets/images/aws/inscription/7.png" target="_blank"><img alt="Confirmation Amazon Web Services" src="../assets/images/aws/inscription/7.png"></a></p>
 
 !!! warning "Incident possible"
 
     Si pour une raison ou une autre vous raccrochez avant d’avoir pu entrer le code ou que le réseau se coupe, gardez la page ouverte. Après quelques minutes, AWS détectera un problème et vous demandera de recommencer l’opération. Vous n’aurez qu’à cliquer sur le bouton {==Recommencer==}.
 
-## Basic Plan
+## Plan Basique
 
-[![Material for MkDocs](assets/images/aws/inscription/8.gif)](assets/images/aws/inscription/8.gif)
+<p><a href="../assets/images/aws/inscription/8.gif" target="_blank"><img alt="Creation du Compte Plan Basique Amazon Web Services" src="../assets/images/aws/inscription/8.gif"></a></p>
 
 ***
 
@@ -137,7 +137,7 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}.
 
 ## Connexion
 
-[![Material for MkDocs](assets/images/aws/inscription/9.gif)](assets/images/aws/inscription/9.gif)
+<p><a href="../assets/images/aws/inscription/9.gif" target="_blank"><img alt="Connection au Compte Amazon Web Services" src="../assets/images/aws/inscription/9.gif"></a></p>
 
 ***
 
@@ -150,7 +150,7 @@ Vous pouvez raccrocher et cliquer sur {==Continuer==}.
 
 ## Console
 
-[![Material for MkDocs](assets/images/aws/inscription/10.png)](assets/images/aws/inscription/10.png)
+<p><a href="../assets/images/aws/inscription/10.png" target="_blank"><img alt="Console de Management Amazon Web Services" src="../assets/images/aws/inscription/10.png"></a></p>
 
 !!! success "Bienvenue sur la console d'administration d'Amazon Web Services !"
     N'oubliez pas de cliquer sur le lien de vérification envoyé par AWS dans votre boîte mail pour vérifier votre adresse !

@@ -6,7 +6,7 @@
 
     Runcloud is a service that offers a secure and easy way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud interface so we can install and configure Wordpress on it.
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/1.gif)](assets/images/aws/run-cloud/en/1.gif)
+<p><a href="../assets/images/aws/run-cloud/en/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/1.gif"></a></p>
 
 ***
 
@@ -20,7 +20,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/2.gif)](assets/images/aws/run-cloud/en/2.gif)
+<p><a href="../assets/images/aws/run-cloud/en/2.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/2.gif"></a></p>
 
 ***
 
@@ -31,7 +31,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/3a.gif)](assets/images/aws/run-cloud/en/3a.gif)
+<p><a href="../assets/images/aws/run-cloud/en/3a.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/3a.gif"></a></p>
 
 ***
 
@@ -49,7 +49,7 @@
 
 ## Installation
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/3.gif)](assets/images/aws/run-cloud/en/3.gif)
+<p><a href="../assets/images/aws/run-cloud/en/3b.gif" target="_blank"><img alt="Pricing plan Runcloud.io" src="../assets/images/aws/run-cloud/en/3b.gif"></a></p>
 
 ***
 
@@ -63,7 +63,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/3b.gif)](assets/images/aws/run-cloud/en/3b.gif)
+<p><a href="../assets/images/aws/run-cloud/en/3b.gif" target="_blank"><img alt="Runcloud.io sur Amazon Lightsail" src="../assets/images/aws/run-cloud/en/3b.gif"></a></p>
 
 ***
 
@@ -79,8 +79,8 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/5.gif)](assets/images/aws/run-cloud/en/5.gif)
-[![Material for MkDocs](assets/images/aws/run-cloud/en/4.gif)](assets/images/aws/run-cloud/en/4.gif)
+<p><a href="../assets/images/aws/run-cloud/en/4.gif" target="_blank"><img alt="Installation de Runcloud.io" src="../assets/images/aws/run-cloud/en/4.gif"></a></p>
+<p><a href="../assets/images/aws/run-cloud/en/5.gif" target="_blank"><img alt="Installation de Runcloud.io" src="../assets/images/aws/run-cloud/en/5.gif"></a></p>
 
 ***
 
@@ -100,7 +100,7 @@ sudo su
 
     During this step, we are going to initialize an application allowing us to install Wordpress on your Ubuntu 16.04 Amazon Lightsail's instance.
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/6.gif)](assets/images/aws/run-cloud/en/6.gif)
+<p><a href="../assets/images/aws/run-cloud/en/6.gif" target="_blank"><img alt="Creation de l'application Runcloud.io" src="../assets/images/aws/run-cloud/en/6.gif"></a></p>
 
 ***
 
@@ -124,7 +124,7 @@ sudo su
 
 ## Configurations
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/7.gif)](assets/images/aws/run-cloud/en/7.gif)
+<p><a href="../assets/images/aws/run-cloud/en/7.gif" target="_blank"><img alt="Configurations Wordpress" src="../assets/images/aws/run-cloud/en/7.gif"></a></p>
 
 ***
 
@@ -138,7 +138,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/8.gif)](assets/images/aws/run-cloud/en/8.gif)
+<p><a href="../assets/images/aws/run-cloud/en/8.gif" target="_blank"><img alt="Installation de Wordpress" src="../assets/images/aws/run-cloud/en/8.gif"></a></p>
 
 ***
 
@@ -152,7 +152,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/9.gif)](assets/images/aws/run-cloud/en/9.gif)
+<p><a href="../assets/images/aws/run-cloud/en/9a.gif" target="_blank"><img alt="Certicat SSL Let's Encrypt Lightsail Wordpress" src="../assets/images/aws/run-cloud/en/9a.gif"></a></p>
 
 ***
 
@@ -169,7 +169,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/9b.gif)](assets/images/aws/run-cloud/en/9b.gif)
+<p><a href="../assets/images/aws/run-cloud/en/9b.gif" target="_blank"><img alt="Certicat SSL Let's Encrypt Lightsail Wordpress" src="../assets/images/aws/run-cloud/en/9b.gif"></a></p>
 
 ***
 
@@ -187,7 +187,7 @@ sudo su
 
     To work, your app (Wordpress) needs a database where your website and your user's information will be stocked.
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/10.gif)](assets/images/aws/run-cloud/en/10.gif)
+<p><a href="../assets/images/aws/run-cloud/en/10a.gif" target="_blank"><img alt="Base de donnée Wordpress" src="../assets/images/aws/run-cloud/en/10a.gif"></a></p>
 
 ***
 
@@ -203,7 +203,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/10b.gif)](assets/images/aws/run-cloud/en/10b.gif)
+<p><a href="../assets/images/aws/run-cloud/en/10b.gif" target="_blank"><img alt="Base de donnée Wordpress" src="../assets/images/aws/run-cloud/en/10b.gif"></a></p>
 
 ***
 
@@ -222,7 +222,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/10c.gif)](assets/images/aws/run-cloud/en/10c.gif)
+<p><a href="../assets/images/aws/run-cloud/en/10c.gif" target="_blank"><img alt="Compte Administrateur Wordpress" src="../assets/images/aws/run-cloud/en/10c.gif"></a></p>
 
 ***
 
@@ -238,7 +238,7 @@ sudo su
 
 ## Wordpress acces
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/11.gif)](assets/images/aws/run-cloud/en/11.gif)
+<p><a href="../assets/images/aws/run-cloud/en/11.gif" target="_blank"><img alt="Accès Wordpress" src="../assets/images/aws/run-cloud/en/11.gif"></a></p>
 
 ***
 
@@ -258,7 +258,7 @@ sudo su
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/12.gif)](assets/images/aws/run-cloud/en/12.gif)
+<p><a href="../assets/images/aws/run-cloud/en/12.gif" target="_blank"><img alt="Utilisateur Administrateur Wordpress" src="../assets/images/aws/run-cloud/en/12.gif"></a></p>
 
 ***
 
@@ -281,7 +281,7 @@ sudo su
 
 ## Htaccess settings
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/13.gif)](assets/images/aws/run-cloud/en/13.gif)
+<p><a href="../assets/images/aws/run-cloud/en/13a.gif" target="_blank"><img alt="Réglages Htaccess" src="../assets/images/aws/run-cloud/en/13a.gif"></a></p>
 
 !!! info "Traffic redirection" 
     The Htaccess file allows you to determine the traffic redirection rules for your website. With this step, any user trying to access the static IP of your Lightsail instance will be redirected to your secure domain name.
@@ -302,7 +302,7 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 
 ***
 
-[![Material for MkDocs](assets/images/aws/run-cloud/en/13b.gif)](assets/images/aws/run-cloud/en/13b.gif)
+<p><a href="../assets/images/aws/run-cloud/en/13b.gif" target="_blank"><img alt="IP to Domain" src="../assets/images/aws/run-cloud/en/13b.gif"></a></p>
 
 ***
 
@@ -320,5 +320,48 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 :    * Click on Save at the top of the windows or hit <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
 
 !!! success "Congratulations! Wordpress is now correctly installed and set to support your website creation."
+
+***
+
+## Cronjob Let's Encrypt
+
+<p><a href="../assets/images/aws/run-cloud/en/14.gif" target="_blank"><img alt="Cronjob Let's Encrypt" src="../assets/images/aws/run-cloud/en/14.gif"></a></p>
+
+***
+
+**Renouvellement automatique de votre certificat de sécurité Let's Encrypt**
+
+:    * Dans le menu de gauche, cliquez sur {==*Cronjob*==}.
+:    * Cliquez sur {==*Create a Cronjob*==}.
+:    * Nommez votre cronjob *Let's Encrypt*.
+:    * Copiez / collez la commande ci-dessous dans le champs prévu à cet effet :
+``` yaml
+cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
+```
+
+:    * Définissez une périodicité de renouvellement en sélectionnant *Every 10 days at midnight*.
+:    * Cliquez sur {==*Add a Cronjob*==}.
+
+!!! success "Félicitation ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
+
+***
+
+## Accès SSH
+
+<p><a href="../assets/images/aws/run-cloud/en/15.gif" target="_blank"><img alt="Accès SSH" src="../assets/images/aws/run-cloud/en/15.gif"></a></p>
+
+***
+
+**Configuration de votre clé SSH publique pour Runcloud.io**
+
+:    * Dans le menu de gauche, cliquez sur {==*SSH Key*==}.
+:    * Cliquez sur {==*Add SSH Key*==}.
+:    * Ajoutez un nom à votre clé SSH publique.
+:    * Allez dans votre Finder dans le dossier `.ssh`.
+:    * Ouvrez avec un éditeur de texte votre clés publique `id_rsa.pub`.
+:    * Copiez / collez la clé publique dans Runcloud.io
+:    * Cliquez sur {==*Add*==}.
+
+!!! success "Votre clé SSH publique est disponible, vous pourrez vous connectez à distance sur votre serveur dans Runcloud.io."
 
 ***

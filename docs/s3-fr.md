@@ -6,7 +6,7 @@
 
     S3 est un service vous permettant d'héberger l'ensemble des médias de votre site internet, permettant ainsi à vos utilisateurs de les charger plus rapidement.
 
-[![Material for MkDocs](assets/images/aws/s3/fr/1.gif)](assets/images/aws/s3/fr/1.gif)
+<p><a href="../assets/images/aws/s3/fr/1.gif" target="_blank"><img alt="Amazon S3" src="../assets/images/aws/s3/fr/1.gif"></a></p>
 
 ***
 
@@ -25,7 +25,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/fr/2.gif)](assets/images/aws/s3/fr/2.gif)
+<p><a href="../assets/images/aws/s3/fr/2.gif" target="_blank"><img alt="Creation du compartiment Amazon S3" src="../assets/images/aws/s3/fr/2.gif"></a></p>
 
 ***
 
@@ -58,7 +58,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/fr/3a.gif)](assets/images/aws/s3/fr/3a.gif)
+<p><a href="../assets/images/aws/s3/fr/3a.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/3a.gif"></a></p>
 
 ***
 
@@ -76,7 +76,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/fr/3b.gif)](assets/images/aws/s3/fr/3b.gif)
+<p><a href="../assets/images/aws/s3/fr/3b.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/3b.gif"></a></p>
 
 ***
 
@@ -119,7 +119,7 @@
 
 ## Utilisateur IAM
 
-[![Material for MkDocs](assets/images/aws/s3/fr/3c.gif)](assets/images/aws/s3/fr/3c.gif)
+<p><a href="../assets/images/aws/s3/fr/3c.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/s3/fr/3c.gif"></a></p>
 
 ***
 
@@ -146,7 +146,7 @@
 
 ## Edition wp-config.php
 
-[![Material for MkDocs](assets/images/aws/s3/fr/4.gif)](assets/images/aws/s3/fr/4.gif)
+<p><a href="../assets/images/aws/s3/fr/4.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/4.gif"></a></p>
 
 ***
 
@@ -158,7 +158,7 @@
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/fr/5.gif)](assets/images/aws/s3/fr/5.gif)
+<p><a href="../assets/images/aws/s3/fr/5.gif" target="_blank"><img alt="Edition wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/5.gif"></a></p>
 
 ***
 
@@ -182,7 +182,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ## WP Offload Media
 
-[![Material for MkDocs](assets/images/aws/s3/en/7.gif)](assets/images/aws/s3/en/7.gif)
+<p><a href="../assets/images/aws/s3/en/7a.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/7a.gif"></a></p>
 
 ***
 
@@ -194,7 +194,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/en/7a.gif)](assets/images/aws/s3/en/7a.gif)
+<p><a href="../assets/images/aws/s3/en/7b.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/7b.gif"></a></p>
 
 ***
 
@@ -206,7 +206,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-[![Material for MkDocs](assets/images/aws/s3/en/8.gif)](assets/images/aws/s3/en/8.gif)
+<p><a href="../assets/images/aws/s3/en/8.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/8.gif"></a></p>
 
 **Options de l'extension**
 

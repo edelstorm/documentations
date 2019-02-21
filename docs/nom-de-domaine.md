@@ -2,7 +2,7 @@
 
 ## Route 53
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/1.gif)](assets/images/aws/nom-de-domaine/fr/1.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/1.gif" target="_blank"><img alt="Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/1.gif"></a></p>
 
 ***
 
@@ -16,7 +16,7 @@
 
 ## Choix du nom de domaine
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/2.gif)](assets/images/aws/nom-de-domaine/fr/2.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/2.gif" target="_blank"><img alt="Choix du nom de domaine Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/2.gif"></a></p>
 
 ***
 
@@ -29,7 +29,7 @@
 
 ## Détails de contact
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/3.gif)](assets/images/aws/nom-de-domaine/fr/3.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/3.gif" target="_blank"><img alt="Détails Contact Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/3.gif"></a></p>
 
 ***
 
@@ -42,7 +42,7 @@
 
 ## Vérifications
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/4.gif)](assets/images/aws/nom-de-domaine/fr/4.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/4.gif" target="_blank"><img alt="Vérifications Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/4.gif"></a></p>
 
 ***
 
@@ -55,7 +55,7 @@
 
 ## Statut d'enregistrement
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/5.gif)](assets/images/aws/nom-de-domaine/fr/5.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/5.gif" target="_blank"><img alt="Statut Enregistrement Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/5.gif"></a></p>
 
 ***
 
@@ -68,7 +68,7 @@
 
 ## Zones hébergées
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/fr/6.gif)](assets/images/aws/nom-de-domaine/fr/6.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/fr/6.gif" target="_blank"><img alt="Statut Enregistrement Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/fr/6.gif"></a></p>
 
 ***
 

@@ -11,7 +11,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-[![Material for MkDocs](assets/images/aws/inscription/1.gif)](assets/images/aws/inscription/1.gif)
+<p><a href="../assets/images/aws/inscription/1.gif" target="_blank"><img alt="Account Creation Credentials Amazon Web Services" src="../assets/images/aws/inscription/1.gif"></a></p>
 
 ***
 
@@ -25,7 +25,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ## Contact
 
-[![Material for MkDocs](assets/images/aws/inscription/2.gif)](assets/images/aws/inscription/2.gif)
+<p><a href="../assets/images/aws/inscription/2.gif" target="_blank"><img alt="Account Creation Contacts Informations Amazon Web Services" src="../assets/images/aws/inscription/2.gif"></a></p>
 
 ***
 
@@ -41,7 +41,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-## Payement
+## Payment Informations
 
 
 !!! info "Things you need to know about the AWS offer"
@@ -52,7 +52,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
     4. You can easily have a look at the details of your <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">billing</a>.
     5. At any moment, you can leave AWS without any hidden costs.
 
-[![Material for MkDocs](assets/images/aws/inscription/3.gif)](assets/images/aws/inscription/3.gif)
+<p><a href="../assets/images/aws/inscription/3.gif" target="_blank"><img alt="Account Creation Payment Information Amazon Web Services" src="../assets/images/aws/inscription/3.gif"></a></p>
 
 ***
 
@@ -66,9 +66,9 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 ***
 
-## Id cheking
+## Phone Check
 
-[![Material for MkDocs](assets/images/aws/inscription/4.gif)](assets/images/aws/inscription/4.gif)
+<p><a href="../assets/images/aws/inscription/4.gif" target="_blank"><img alt="Account Creation Phone Check Amazon Web Services" src="../assets/images/aws/inscription/4.gif"></a></p>
 
 !!! warning "Confirm your number"
 
@@ -89,7 +89,7 @@ Now, AWS is going to check that you are a real person and not a robot.
 
 ### AWS call
 
-[![Material for MkDocs](assets/images/aws/inscription/5.gif)](assets/images/aws/inscription/5.gif)
+<p><a href="../assets/images/aws/inscription/5.gif" target="_blank"><img alt="Creation du Compte Amazon Web Services Call" src="../assets/images/aws/inscription/5.gif"></a></p>gif)
 
 ***
 
@@ -101,7 +101,7 @@ Type on your phone the four numbers you see on your computer screen.
 
 ### Confirmation
 
-[![Material for MkDocs](assets/images/aws/inscription/6.gif)](assets/images/aws/inscription/6.gif)
+<p><a href="../assets/images/aws/inscription/6.gif" target="_blank"><img alt="Account Creation Confirmation Amazon Web Services" src="../assets/images/aws/inscription/6.gif"></a></p>
 
 ***
 
@@ -112,7 +112,7 @@ You can now click on {==Continue==}.
 
 ***
 
-[![Material for MkDocs](assets/images/aws/inscription/7.png)](assets/images/aws/inscription/7.png)
+<p><a href="../assets/images/aws/inscription/7.png" target="_blank"><img alt="Wait Confirmation Amazon Web Services" src="../assets/images/aws/inscription/7.png"></a></p>
 
 !!! warning "Possible incident"
 
@@ -120,7 +120,7 @@ You can now click on {==Continue==}.
 
 ## Basic Plan
 
-[![Material for MkDocs](assets/images/aws/inscription/8.gif)](assets/images/aws/inscription/8.gif)
+<p><a href="../assets/images/aws/inscription/8.gif" target="_blank"><img alt="Account Creation Basic Plan Amazon Web Services" src="../assets/images/aws/inscription/8.gif"></a></p>
 
 ***
 
@@ -133,7 +133,7 @@ You can now click on {==Continue==}.
 
 ## Connexion
 
-[![Material for MkDocs](assets/images/aws/inscription/9.gif)](assets/images/aws/inscription/9.gif)
+<p><a href="../assets/images/aws/inscription/9.gif" target="_blank"><img alt="Account Log In Amazon Web Services" src="../assets/images/aws/inscription/9.gif"></a></p>f)
 
 ***
 
@@ -146,7 +146,7 @@ You can now click on {==Continue==}.
 
 ## Console
 
-[![Material for MkDocs](assets/images/aws/inscription/10.png)](assets/images/aws/inscription/10.png)
+<p><a href="../assets/images/aws/inscription/10.png" target="_blank"><img alt="Management Console Amazon Web Services" src="../assets/images/aws/inscription/10.png"></a></p>
 
 !!! success "Welcome on your Amazon Web Services administration console!"
     Don't forget to go check your e-mails and to click on the link sent by AWS to verify your e-mail!

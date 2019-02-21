@@ -2,7 +2,7 @@
 
 ## Route 53
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/1.gif)](assets/images/aws/nom-de-domaine/en/1.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/en/1.gif" target="_blank"><img alt="Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/1.gif"></a></p>
 
 ***
 
@@ -16,7 +16,7 @@
 
 ## Choosing a domain name
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/3.gif)](assets/images/aws/nom-de-domaine/en/3.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/en/3.gif" target="_blank"><img alt="Domain Name Creation Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/3.gif"></a></p>
 
 ***
 
@@ -29,7 +29,7 @@
 
 ## Contact details
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/4.gif)](assets/images/aws/nom-de-domaine/en/4.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/en/4.gif" target="_blank"><img alt="Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/4.gif"></a></p>
 
 ***
 
@@ -42,7 +42,7 @@
 
 ## Check your contact details
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/5.png)](assets/images/aws/nom-de-domaine/en/5.png)
+<p><a href="../assets/images/aws/nom-de-domaine/en/5.png" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/5.png"></a></p>
 
 ***
 
@@ -55,7 +55,7 @@
 
 ## Registration statuts
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/7.gif)](assets/images/aws/nom-de-domaine/en/7.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/en/7.gif" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/7.gif"></a></p>
 
 ***
 
@@ -68,7 +68,7 @@
 
 ## Hosted zones
 
-[![Material for MkDocs](assets/images/aws/nom-de-domaine/en/8.gif)](assets/images/aws/nom-de-domaine/en/8.gif)
+<p><a href="../assets/images/aws/nom-de-domaine/en/8.gif" target="_blank"><img alt="Delete Default Hosted Zone Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/8.gif"></a></p>
 
 ***
 

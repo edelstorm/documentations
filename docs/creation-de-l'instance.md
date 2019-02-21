@@ -8,7 +8,7 @@
 
 ## Générer une paire de clés SSH
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/1.gif)](assets/images/aws/creation-instance/fr/1.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/1a.gif" target="_blank"><img alt="Générer une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/1a.gif"></a></p>
 
 ***
 
@@ -37,7 +37,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/1b.gif)](assets/images/aws/creation-instance/fr/1b.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/1b.gif" target="_blank"><img alt="Localiser une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/1b.gif"></a></p>
 
 ***
 
@@ -57,7 +57,7 @@ ssh-keygen -t rsa
 
 ## Création de l'instance
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/2.gif)](assets/images/aws/creation-instance/fr/2.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/2a.gif" target="_blank"><img alt="Creation Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/2a.gif"></a></p>
 
 ***
 
@@ -69,7 +69,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/2a.gif)](assets/images/aws/creation-instance/fr/2a.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/2b.gif" target="_blank"><img alt="Creation Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/2b.gif"></a></p>
 
 ***
 
@@ -82,7 +82,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/3.gif)](assets/images/aws/creation-instance/fr/3.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/3.gif" target="_blank"><img alt="Zone géographique, type d'image et clé SSH Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/3.gif"></a></p>
 
 ***
 
@@ -103,7 +103,7 @@ ssh-keygen -t rsa
 
 ## Réglages du Firewall
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/11.gif)](assets/images/aws/creation-instance/fr/11.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/11.gif" target="_blank"><img alt="Réglages Firewall Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/11.gif"></a></p>
 
 ***
 
@@ -123,7 +123,7 @@ ssh-keygen -t rsa
 
 ## IP Statique
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/12.gif)](assets/images/aws/creation-instance/fr/12.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/12.gif" target="_blank"><img alt="IP Statique Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/12.gif"></a></p>
 
 ***
 
@@ -145,7 +145,7 @@ ssh-keygen -t rsa
 
 ## Zone DNS
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/13.gif)](assets/images/aws/creation-instance/fr/13.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/13.gif" target="_blank"><img alt="Zone DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/13.gif"></a></p>
 
 ***
 
@@ -161,7 +161,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/14.gif)](assets/images/aws/creation-instance/fr/14.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/14.gif" target="_blank"><img alt="Zone DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/14.gif"></a></p>
 
 ***
 
@@ -178,7 +178,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/15.gif)](assets/images/aws/creation-instance/fr/15.gif)
+<p><a href="../assets/images/aws/creation-instance/fr/15.gif" target="_blank"><img alt="Enregistrements DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/15.gif"></a></p>
 
 ***
 
@@ -202,7 +202,7 @@ ssh-keygen -t rsa
 
     Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous pourrez découvrir de nombreuses options que nous allons vous présenter ci-dessous.
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/4.png)](assets/images/aws/creation-instance/fr/4.png)
+<p><a href="../assets/images/aws/creation-instance/fr/4.png" target="_blank"><img alt="Options Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/4.png"></a></p>
 
 ***
 
@@ -214,7 +214,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/5.png)](assets/images/aws/creation-instance/fr/5.png)
+<p><a href="../assets/images/aws/creation-instance/fr/5.png" target="_blank"><img alt="Connexion SSH Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/5.png"></a></p>
 
 ***
 
@@ -225,7 +225,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/6.png)](assets/images/aws/creation-instance/fr/6.png)
+<p><a href="../assets/images/aws/creation-instance/fr/6.png" target="_blank"><img alt="Stockage Évolutif Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/6.png"></a></p>
 
 ***
 
@@ -235,7 +235,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/7.png)](assets/images/aws/creation-instance/fr/7.png)
+<p><a href="../assets/images/aws/creation-instance/fr/7.png" target="_blank"><img alt="Métriques Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/7.png"></a></p>
 
 ***
 
@@ -245,7 +245,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/8.png)](assets/images/aws/creation-instance/fr/8.png)
+<p><a href="../assets/images/aws/creation-instance/fr/8.png" target="_blank"><img alt="Snapshots Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/8.png"></a></p>
 
 ***
 
@@ -255,7 +255,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/9.png)](assets/images/aws/creation-instance/fr/9.png)
+<p><a href="../assets/images/aws/creation-instance/fr/9.png" target="_blank"><img alt="Tags Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/9.png"></a></p>
 
 ***
 
@@ -265,7 +265,7 @@ ssh-keygen -t rsa
 
 ***
 
-[![Material for MkDocs](assets/images/aws/creation-instance/fr/10.png)](assets/images/aws/creation-instance/fr/10.png)
+<p><a href="../assets/images/aws/creation-instance/fr/10.png" target="_blank"><img alt="Historique Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/10.png"></a></p>
 
 ***
 
