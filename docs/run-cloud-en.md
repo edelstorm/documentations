@@ -323,45 +323,45 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 
 ***
 
-## Cronjob Let's Encrypt
+## Cron Job Let's Encrypt
 
 <p><a href="../assets/images/aws/run-cloud/en/14.gif" target="_blank"><img alt="Cronjob Let's Encrypt" src="../assets/images/aws/run-cloud/en/14.gif"></a></p>
 
 ***
 
-**Renouvellement automatique de votre certificat de sécurité Let's Encrypt**
+**Security certificate Let's Encrypt automatical renewal**
 
-:    * Dans le menu de gauche, cliquez sur {==*Cronjob*==}.
-:    * Cliquez sur {==*Create a Cronjob*==}.
-:    * Nommez votre cronjob *Let's Encrypt*.
-:    * Copiez / collez la commande ci-dessous dans le champs prévu à cet effet :
+:    * Click on {==*Cron Job*==} in the left menu.
+:    * Click on{==*Create a Cron Job*==}.
+:    * Name your Cron Job: *Let's Encrypt*.
+:    * Copy the command below and paste it in the command field:
 ``` yaml
 cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 ```
 
-:    * Définissez une périodicité de renouvellement en sélectionnant *Every 10 days at midnight*.
-:    * Cliquez sur {==*Add a Cronjob*==}.
+:    * Define the predefined settings on *Every 10 days at midnight*.
+:    * Click on{==*Add a Cron Job*==}.
 
-!!! success "Félicitation ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
+!!! success "Congratulations! Your security certificate Let's Encrypt will be now automatically renewed every ten days."
 
 ***
 
-## Accès SSH
+## SSH acces
 
 <p><a href="../assets/images/aws/run-cloud/en/15.gif" target="_blank"><img alt="Accès SSH" src="../assets/images/aws/run-cloud/en/15.gif"></a></p>
 
 ***
 
-**Configuration de votre clé SSH publique pour Runcloud.io**
+**Public SSH key setting for Runcloud.io**
 
-:    * Dans le menu de gauche, cliquez sur {==*SSH Key*==}.
-:    * Cliquez sur {==*Add SSH Key*==}.
-:    * Ajoutez un nom à votre clé SSH publique.
-:    * Allez dans votre Finder dans le dossier `.ssh`.
-:    * Ouvrez avec un éditeur de texte votre clés publique `id_rsa.pub`.
-:    * Copiez / collez la clé publique dans Runcloud.io
-:    * Cliquez sur {==*Add*==}.
+:    * Click on {==*SSH Key*==} in the left menu.
+:    * Click on {==*Add SSH Key*==}.
+:    * Name your public SSH key.
+:    * Go to your `.ssh` file.
+:    * Open `id_rsa.pub` with a text editor
+:    * Copy / paste the public key in Runcloud.io
+:    * Click on {==*Add*==}.
 
-!!! success "Votre clé SSH publique est disponible, vous pourrez vous connectez à distance sur votre serveur dans Runcloud.io."
+!!! success "Your SSH public key is now available. You will be able to connect remotely to your server through RunCloud.io."
 
 ***

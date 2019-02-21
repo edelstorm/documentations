@@ -322,7 +322,7 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 
 ***
 
-## Cronjob Let's Encrypt
+## Cron Job Let's Encrypt
 
 <p><a href="../assets/images/aws/run-cloud/en/14.gif" target="_blank"><img alt="Cronjob Let's Encrypt" src="../assets/images/aws/run-cloud/en/14.gif"></a></p>
 
@@ -330,16 +330,16 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 
 **Renouvellement automatique de votre certificat de sécurité Let's Encrypt**
 
-:    * Dans le menu de gauche, cliquez sur {==*Cronjob*==}.
-:    * Cliquez sur {==*Create a Cronjob*==}.
-:    * Nommez votre cronjob *Let's Encrypt*.
-:    * Copiez / collez la commande ci-dessous dans le champs prévu à cet effet :
+:    * Dans le menu de gauche, cliquez sur {==*Cron Job*==}.
+:    * Cliquez sur {==*Create a Cron Job*==}.
+:    * Nommez votre Cron Job: *Let's Encrypt*.
+:    * Copiez / collez la commande ci-dessous dans le champ prévu à cet effet :
 ``` yaml
 cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 ```
 
 :    * Définissez une périodicité de renouvellement en sélectionnant *Every 10 days at midnight*.
-:    * Cliquez sur {==*Add a Cronjob*==}.
+:    * Cliquez sur {==*Add a Cron Job*==}.
 
 !!! success "Félicitation ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
 
@@ -356,11 +356,11 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 :    * Dans le menu de gauche, cliquez sur {==*SSH Key*==}.
 :    * Cliquez sur {==*Add SSH Key*==}.
 :    * Ajoutez un nom à votre clé SSH publique.
-:    * Allez dans votre Finder dans le dossier `.ssh`.
-:    * Ouvrez avec un éditeur de texte votre clés publique `id_rsa.pub`.
+:    * Allez dans votre dossier `.ssh`.
+:    * Ouvrez avec un éditeur de texte votre clé publique `id_rsa.pub`.
 :    * Copiez / collez la clé publique dans Runcloud.io
 :    * Cliquez sur {==*Add*==}.
 
-!!! success "Votre clé SSH publique est disponible, vous pourrez vous connectez à distance sur votre serveur dans Runcloud.io."
+!!! success "Votre clé SSH publique est disponible, vous pourrez vous connecter à distance sur votre serveur dans Runcloud.io."
 
 ***
