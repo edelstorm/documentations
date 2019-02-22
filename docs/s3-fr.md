@@ -58,31 +58,17 @@
 
 ***
 
-<p><a href="../assets/images/aws/s3/fr/3a.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/3a.gif"></a></p>
-
-***
-
-**Initialisation de la stratégie IAM**
-
-:    * Revenez sur la console de management AWS en cliquant sur le logo en haut à gauche.
-:    * Cherchez le service IAM et cliquez dessus pour y accéder.
-:    * Dans le menu de gauche, cliquez sur {==Utilisateurs==}.
-:    * Cliquez sur {==Ajouter un utilisateur==}.
-:    * Choisissez un nom pour votre utilisateur IAM.
-:    * Cochez la case *Accès par programmation*.
-:    * Cliquez sur {==Suivant : Autorisations==}.
-:    * Cliquez sur {==Attacher directement les stratégies existantes==}.
-:    * Cliquez sur {==Créer une stratégie==}.
-
-***
-
-<p><a href="../assets/images/aws/s3/fr/3b.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/3b.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/3.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/3.gif"></a></p>
 
 ***
 
 **Création de la stratégie IAM**
 
-:    * Cliquez sur le menu JSON pour accéder à l'éditeur en ligne.
+:    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
+:    * Cherchez le service IAM et cliquez dessus pour y accéder.
+:    * Dans le menu de gauche, cliquez sur {==Stratégie==}.
+:    * Cliquez sur {==Créer une stratégie==}.
+:    * Cliquez sur l'onglet {==JSON==} pour accéder à l'éditeur en ligne.
 :    * Une fois dans l'éditeur, supprimez le contenu existant et copiez / collez la stratégie IAM ci-dessous :
 ``` sh
 {
@@ -106,12 +92,18 @@
 }
 ```
 
-!!! warning "N'oubliez pas de remplacer les deux *YourBucketName* par le nom que vous avez donné à votre compartiment."
 :    * Cliquez sur {==Examiner une stratégie==}.
-:    * Nommez la stratégie.
-:    * Cliquez sur {==Créer une stratégie==}.
+
+!!! warning "N'oubliez pas de remplacer les deux *YourBucketName* par le nom que vous avez donné à votre compartiment."
 
 ***
+
+<p><a href="../assets/images/aws/s3/fr/4.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/fr/4.gif"></a></p>
+
+***
+
+:    * Nommez la stratégie.
+:    * Cliquez sur {==Créer une stratégie==}.
 
 !!! success "La stratégie IAM est prête à être utilisée pour votre futur utilisateur IAM."
 
@@ -119,7 +111,7 @@
 
 ## Utilisateur IAM
 
-<p><a href="../assets/images/aws/s3/fr/3c.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/s3/fr/3c.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/5.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/s3/fr/5.gif"></a></p>
 
 ***
 
@@ -131,14 +123,13 @@
 :    * Cochez la case *Accès par programmation*.
 :    * Cliquez sur {==Suivant : Autorisations==}.
 :    * Cliquez sur {==Attacher directement les stratégies existantes==}.
-:    * Dans la barre de recherche, tapez le nom de votre stratégie IAM choisi dans l'étape précédente.
-:    * Cochez la case de votre stratégie IAM et cliquez sur {==Suivant : Balises==}.
+:    * Dans la barre de recherche, tapez le nom de votre stratégie IAM.
+:    * Sélectionnez votre stratégie IAM en cochant la case et cliquez sur {==Suivant : Balises==}.
 :    * Cliquez sur {==Suivant : Vérifications==}.
 :    * Cliquez sur {==Créer un utilisateur==}.
 :    * Cliquez sur {==Télécharger .csv==} pour conserver ces accès dans un fichier séparé.
-:    * Gardez cette fenêtre ouverte pour la prochaine étape.
 
-!!! warning "N'oubliez pas de copier et d'enregistrer votre ID de clé d'accès et votre clé d'accès secrète dans un endroit sécurisé."
+!!! warning "Gardez cette fenêtre ouverte pour la prochaine étape et n'oubliez pas de stocker votre fichier .CSV contenant votre ID de clé d'accès et votre clé d'accès secrète dans un endroit sécurisé."
 
 !!! success "Félicitation votre utilisateur IAM est lié à la bonne stratégie IAM et vous avez vos deux clés d'accès."
 
@@ -146,7 +137,7 @@
 
 ## Edition wp-config.php
 
-<p><a href="../assets/images/aws/s3/fr/4.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/4.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/6.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/6.gif"></a></p>
 
 ***
 
@@ -154,17 +145,17 @@
 
 :    * Allez dans *Web Applications* et cliquez sur votre application Wordpress.
 :    * Dans le menu de gauche, cliquez sur {==File Manager==}.
-:    * Selectionnez le fichier *wp-config.php* et cliquez dans le menu sur *View/Edit*.
+:    * Selectionnez le fichier *wp-config.php* et cliquez dans le menu en haut sur *View/Edit*.
 
 ***
 
-<p><a href="../assets/images/aws/s3/fr/5.gif" target="_blank"><img alt="Edition wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/5.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/7.gif" target="_blank"><img alt="Edition wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/fr/7.gif"></a></p>
 
 ***
 
-**Injection de la commande**
+**Injection des clés d'accès IAM**
 
-:    * Une fois dans l'éditeur, copiez / collez cette commande après `define('WP_DEBUG', false);` : 
+:    * Une fois dans l'éditeur, copiez / collez la commande ci-dessous à la suite de `define('WP_DEBUG', false);` : 
 ``` sh
 define( 'AS3CF_SETTINGS', serialize( array(
     'provider' => 'aws',
@@ -172,21 +163,22 @@ define( 'AS3CF_SETTINGS', serialize( array(
     'secret-access-key' => 'YourAccessKeySecret',
 ) ) );
 ```
+
 :    * Depuis votre interface IAM, remplacer *YourAccessKeyID* votre ID de clé d'accès et *YourAccessKeySecret* par votre clé secrète d'accès.
 
 :    * Appuyez sur <kbd>Ctrl</kbd> + <kbd>S</kbd> pour sauvegarder les modifications.
 
-!!! warning "Remplacez *YourAccessKeyID* et *YourAccessKeySecret* par les clés présentes dans la dernière étape IAM."
+!!! warning "N'oubliez pas de remplacer *YourAccessKeyID* et *YourAccessKeySecret* par les clés présentes dans la dernière étape IAM."
 
 ***
 
 ## WP Offload Media
 
-<p><a href="../assets/images/aws/s3/en/7a.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/7a.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/8.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/fr/8.gif"></a></p>
 
 ***
 
-**Revenez sur votre page d'accueil Wordpress**
+**Rendez-vous sur votre interface d'administration Wordpress**
 
 :    * Dans le menu de gauche, cliquez sur {==Extensions > Ajouter==}.
 :    * Dans la barre de recherche, tapez *Amazon S3*.
@@ -194,23 +186,32 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/7b.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/7b.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/9.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/fr/9.gif"></a></p>
 
 ***
 
-**Suppression des applications superflues et configuration de l'extension WP Offload Media**
+**Suppression des applications par défaut et configuration de l'extension WP Offload Media**
 
 :    * Dans le menu *Extensions installées*, supprimez l'ensemble des applications présentes par défaut.
-:    * Dans le menu de l'extension, cliquez sur *Options*.
-:    * Une fois à l'intérieur, indiquez le nom de votre compartiment S3 et cliquez sur *Save Bucket Setting*.
+:    * Cliquez sur *Settings* de WP Offload Media Lite.
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/8.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/8.gif"></a></p>
+<p><a href="../assets/images/aws/s3/fr/10.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/fr/10.gif"></a></p>
+
+***
+
+:    * Indiquez le nom de votre compartiment Amazon S3 et cliquez sur *Save Bucket Setting*.
+
+***
+
+<p><a href="../assets/images/aws/s3/fr/11.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/fr/11.gif"></a></p>
+
+***
 
 **Options de l'extension**
 
-:    * Une fois dans les options de l'extension, activez *Force HTTPS*.
+:    * Activez l'option *Force HTTPS*.
 :    * Cliquez sur *Sauvegarder*.
 
 !!! success "Félicitations, vous avez correctement configuré Amazon S3 pour votre site Wordpress."

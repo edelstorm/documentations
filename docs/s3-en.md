@@ -58,31 +58,17 @@
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/3.gif" target="_blank"><img alt="Create IAM Policy" src="../assets/images/aws/s3/en/3.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/3.gif" target="_blank"><img alt="Amazon IAM Policy Creation" src="../assets/images/aws/s3/en/3.gif"></a></p>
 
 ***
 
 **IAM policy initialization**
 
-:    * Go back to the AWS Management Console by clicking on the top left logo.
+:    * Go back to the Management Console by clicking on the AWS top left logo.
 :    * Search for the IAM service and click on the result.
-:    * In the left menu, click on {==Users==}.
-:    * Click on {==Add user==}.
-:    * Choose a name for your user.
-:    * Check the box *Programmatic access*.
-:    * Click on {==Next: Permissions==}.
-:    * Click on {==Attach existing policies==}.
+:    * In the left menu, click on {==Policies==}.
 :    * Click on {==Create policy==}.
-
-***
-
-<p><a href="../assets/images/aws/s3/en/4.gif" target="_blank"><img alt="IAM Policy Initialization" src="../assets/images/aws/s3/en/4.gif"></a></p>
-
-***
-
-**IAM policy creation**
-
-:    * To access the online editor, click on the JSON menu.
+:    * To access the online editor, click on the {==JSON==} menu.
 :    * Once in the editor, delete the existing content and copy / paste the IAM policy below:
 ``` sh
 {
@@ -106,12 +92,18 @@
 }
 ```
 
-!!! warning "Don't forget to the two *YourBucketName* by the name you chose for your bucket."
 :    * Click on {==Review policy==}.
-:    * Name the policy.
-:    * Click on {==Create policy==}.
+
+!!! warning "Don't forget to replace two times *YourBucketName* by the name you chose for your bucket."
 
 ***
+
+<p><a href="../assets/images/aws/s3/en/4.gif" target="_blank"><img alt="Creation de la stratégie Amazon IAM" src="../assets/images/aws/s3/en/4.gif"></a></p>
+
+***
+
+:    * Name the policy.
+:    * Click on {==Create policy==}.
 
 !!! success "The IAM policy is now ready to be used for your future IAM user."
 
@@ -119,11 +111,11 @@
 
 ## IAM User
 
-<p><a href="../assets/images/aws/s3/en/5.gif" target="_blank"><img alt="IAM User Creation" src="../assets/images/aws/s3/en/5.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/5.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/s3/en/5.gif"></a></p>
 
 ***
 
-**IAM policy and user linking**
+**IAM policy and IAM user linking**
 
 :    * In the left menu, click on {==Users==}.
 :    * Click on {==Add user==}.
@@ -136,9 +128,8 @@
 :    * Click on {==Next: Review==}.
 :    * Click on {==Create user==}.
 :    * To keep your access in a separate file, click on {==Download .csv==}.
-:    * Keep this window open for the next step.
 
-!!! warning "Don't forget to copy/paste and save your Access key ID and Secret access key in a secure place."
+!!! warning "Keep this window open for the next step and don't forget to copy/paste and save your Access key ID and Secret access key in a secure place."
 
 !!! success "Congratulations! Your IAM user is now liked to the right IAM policy and you have the two access keys."
 
@@ -146,7 +137,7 @@
 
 ## Wp-config.php edition
 
-<p><a href="../assets/images/aws/s3/en/6a.gif" target="_blank"><img alt="Runcloud.io wp-config.php Edition" src="../assets/images/aws/s3/en/6a.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/6.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/en/6.gif"></a></p>
 
 ***
 
@@ -158,11 +149,11 @@
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/6b.gif" target="_blank"><img alt="Runcloud.io wp-config.php Edition" src="../assets/images/aws/s3/en/6b.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/7.gif" target="_blank"><img alt="Edition wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/s3/en/7.gif"></a></p>
 
 ***
 
-**Command injection**
+**Injection des clés d'accès IAM**
 
 :    * Once in the editor, copy/paste the command below after `define('WP_DEBUG', false);` : 
 ``` sh
@@ -172,6 +163,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
     'secret-access-key' => 'YourAccessKeySecret',
 ) ) );
 ```
+
 :    * Then go to your IAM interface so you can replace *YourAccessKeyID* with your access key ID and *YourAccessKeySecret* with your secret access key.
 
 :    * Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
@@ -182,7 +174,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ## WP Offload Media
 
-<p><a href="../assets/images/aws/s3/en/7a.gif" target="_blank"><img alt="Plugin Installation WP Offload Amazon S3" src="../assets/images/aws/s3/en/7a.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/8.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/8.gif"></a></p>
 
 ***
 
@@ -194,19 +186,28 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/7b.gif" target="_blank"><img alt="Plugin Configuration WP Offload Amazon S3" src="../assets/images/aws/s3/en/7b.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/9.gif" target="_blank"><img alt="Installation du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/9.gif"></a></p>
 
 ***
 
-**Delete the unnecessary applications and configure your WP Offload Media plugin**
+**Delete the default applications and configure your WP Offload Media plugin**
 
 :    * In the *Extensions installées* menu, delete the by default applications.
 :    * In the plugins menu, click on *Settings*.
+
+***
+
+<p><a href="../assets/images/aws/s3/en/10.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/10.gif"></a></p>
+
+***
+
 :    * Once there, put your S3 bucket in the field and click on *Save Bucket Setting*.
 
 ***
 
-<p><a href="../assets/images/aws/s3/en/8.gif" target="_blank"><img alt="Plugin Configuration WP Offload Amazon S3" src="../assets/images/aws/s3/en/8.gif"></a></p>
+<p><a href="../assets/images/aws/s3/en/11.gif" target="_blank"><img alt="Configuration du plugin WP Offload Amazon S3" src="../assets/images/aws/s3/en/11.gif"></a></p>
+
+***
 
 **Plugin settings**
 
