@@ -111,8 +111,8 @@ nav:
   - Instance creation: instance-creation.md
   - Run Cloud FR: run-cloud-fr.md
   - Run Cloud EN: run-cloud-en.md
-  - S3 FR: s3-fr.md
-  - S3 EN: s3-en.md
+  - CDN FR: cdn-fr.md
+  - CDN EN: cdn-en.md
   - Design: design.md
   - Aide:
     - Glossaire: aide/glossaire.md

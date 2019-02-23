@@ -295,8 +295,8 @@ sudo su
 :    * Selectionnez le fichier `.htaccess` et cliquez sur *View/Edit*.
 :    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous :
 ``` yaml
-RewriteCond %{HTTP_HOST} ^111\.111\.111\.111
-RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
+RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
 ```
 
 ***
@@ -311,8 +311,8 @@ RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
 :    * Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.
 :    * Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
 ``` yaml
-RewriteCond %{HTTP_HOST} ^35\.180\.184\.49
-RewriteRule (.*) https://yoursite.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]
+RewriteRule ^(.*)$ https://yoursite.com/$1 [R=301,L]
 ```
 
 :    * Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.
