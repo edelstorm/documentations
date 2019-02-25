@@ -64,15 +64,16 @@ ssh-keygen -t rsa
 **Amazon Lightsail instance options**
 
 :    * Go on your AWS management console, search for the service *Lightsail* and click on it.
-:    * Choose the language you prefer for the interface.
+:    * Choose the language you prefer to use.
 :    * Click on {==Create instance==}.
-:    * Choose an instance location, the region has to be close to where your future users will be located.
+:    * Choose an instance location. Choose the region that is the closest to where your future users will be located.<br> 
+        *If you target users in Europe, you can choose Frankfurt, if you target users in Japan, you should choose Tokyo. The goal is to enable a quicker loading of your website to the users.*
 :    * Let the Availability Zone by default.
 :    * Choose *Linux/Unix* as a platform.
 :    * Click on the tab *OS Only* and choose *Ubuntu 16.04 LTS* as an operating system.
 :    * Don't add any shell script. (I)
 :    * Click on *Change SSH key pair* and on *Upload New* then on {==Upload==}. 
-:    * Click on *Choose a file* and choose `id_rsa.pub` file in your `~/.ssh` folder, then click on {==Upload key==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
+:    * Click on *Choose a file* and choose `id_rsa.pub` file in your `~/.ssh` folder, then click on {==Upload key==}. Providing your public SSH key will enable you to secure the communication between your computer and your Amazon Lightsail instance.
 :    * Select the basic **3.50$ per month** plan, the first trial month is free.
 :    * Name your instance, with your domain name preferably. (A)
 :    * You can add identifications tags to this instance if you think you are going to create other instances in the future.
@@ -80,9 +81,9 @@ ssh-keygen -t rsa
 
 !!! info "Informations"
 
-    À partir de cette étape, vous souscrivez au service Amazon Lighsail, vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.
+    From now you subscribe to the Amazon Lighsail service. You can delete this instance at any moment. You can check the billing from <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">here</a>.
 
-!!! success "Votre instance Amazon Lightsail est prête à être utilisée pour votre site web."
+!!! success "Your Amazon Lightsail instance is now ready to be used for your website."
 
 ***
 
@@ -96,9 +97,10 @@ ssh-keygen -t rsa
 
 :    * Click on your instance and go to the *Networking* section.
 :    * In the *Firewall* section, click on *Add another*.
-:    * Open the *HTTPS* port. Permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
+:    * In the *Custom* field select *HTTPS*.<br>
+        This will secure the communications between your users the external applications and your instance.
 :    * Click on *Add another*.
-:    * Choose *Custom* et and add the *34210* port. 
+:    * Write *34210* to the *Port* field. 
 :    * Click on {==Save==}.
 
 ***
@@ -114,7 +116,7 @@ ssh-keygen -t rsa
 
      By default, your instance has a dynamic IP. Meaning that each time you restart your instance, your IP address changes. You need a static IP so your website is reachable from a unique address. A static IP is free when it is linked to an instance.
 
-!!! success "HTTPS et FTP are now open and the instance has now a static IP."
+!!! success "HTTPS and FTP are now opened and the instance has a static IP."
 
 ***
 
@@ -127,7 +129,7 @@ ssh-keygen -t rsa
 :    * On the top left corner, click on *Home* then go to the *Networking* tab.
 :    * Click on {==Create DNS zone==}.
 :    * In the field, write your domain name. (A)
-:    * You can add identifications tags to this DNS zone if you will have multiple.
+:    * You can add identifications tags to this DNS zone if you think you will create more than one.
 :    * Click on {==Create DNS zone==}.
 
 ***
@@ -141,7 +143,7 @@ ssh-keygen -t rsa
 :    * Add a second type A for `www.YourDomainName.com` pointing to your static IP.<br><br>
        **To do so**, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right.
 
-!!! success "Your instance has a DNS zone and it's static IP point to your domain name."
+!!! success "Your instance has a DNS zone and its static IP point to your domain name."
 
 ***
 
@@ -156,7 +158,7 @@ ssh-keygen -t rsa
 
 :    * Under the DNS records, you can see the *Nameservers*.
 :    * On the top right corner, click on *AWS* to open the management console.
-:    * Search for *Route 53* on the search bar and click on it.
+:    * Search for *Route 53* in the search bar and click on it.
 :    * On the left side of the interface, click on *Registered domains*.
 :    * Click on your domain name.
 :    * On the right, click on *Add or edit name servers*. Then, replace one by one the actuals name servers by the four new ones from your DNS zone.
