@@ -170,7 +170,7 @@ sudo su
 
 !!! info "Information"
 
-    To work, your app (Wordpress) needs a database where your website and your user's information will be stocked.
+    Your app (Wordpress) needs a database to function. It will stock your website's and your user's information.
 
 ***
 
@@ -183,7 +183,7 @@ sudo su
 
 !!! info "Information"
     
-    To access the Wordpress dashboard, you need an admin account that will have all the rights on your website. For this step, we will create the logins for this account and you must keep it in a secure place/file.
+    You need an admin account to access the Wordpress dashboard. This account will have all the rights on your website. Once the admin login/password created, you must keep it in a secure place/file.
 
 ***
 
@@ -253,7 +253,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 :    * Leave the "by default" *Database Host* to `localhost`.
 :    * Change your prefix with something else than `wp_`, but keep the same format.
 :    * Click on {==Submit==}.
-:    * Cliquez sur {==Run the installation==}.
+:    * Click on {==Run the installation==}.
 
 ***
 
@@ -284,7 +284,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ***
 
-**Application par défaut**
+**By default application**
 
 :    * Come back to Runcloud.io and in the left menu, click on {==Web Application==}.
 :    * Click on the right option icon and select *Set as default Web Application*.
@@ -295,17 +295,12 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 **URL rewriting rule injection**
 
 !!! info "Information" 
-    The Htaccess file allows you to determine the traffic redirection rules for your website. With this step, any user trying to access the static IP of your Lightsail instance will be redirected to your secure domain name.
+    The Htaccess file allows you to determine the traffic redirection rules for your website. Thanks to this step, any user trying to access the static IP of your Lightsail instance will be redirected to your secure domain name.
 
 :    * In the left menu of your Runcloud.io interface, click on {==Web Application==}.
 :    * Then, click on your application name.
 :    * On the left menu, click on {==File Manager==}.
 :    * Select the `.htaccess` file and click on *View/Edit*.
-:    * Once on the editor, copy/past the re-writing rule below:
-``` yaml
-RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
-RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
-```
 
 ***
 
@@ -315,12 +310,18 @@ RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
 
 **URL rewriting rule configuration**
 
+:    * Once in the editor, copy/past the re-writing rule below under `RewriteBase /`:
+``` yaml
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
+RewriteRule ^(.*)$ https://yoursite.com/$1 [R=301,L]
+```
+
 :    * On your Lightsail interface, copy the static IP address of your instance.
 :    * Paste the static IP in the Htaccess file so you can see it during this step.
 :    * Then, edit the "re-writing rule" you copied/pasted on the last step, with your static IP and domain name. Has the example below:
 ``` yaml
 RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]
-RewriteRule ^(.*)$ https://yoursite.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
 ```
 
 :    * Once this step is done, erase the static IP and the spaces you created, to make everything more readable.

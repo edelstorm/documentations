@@ -102,11 +102,11 @@ sudo su
 :    * Cliquez sur {==Create Application==}.
 :    * Nommez votre application avec le nom de votre futur site web.
 :    * Ajoutez le nom de domaine que vous utilisez pour votre instance de cette façon : `*.VotreNomDeDomaine.com`
-:    * Choississez l'utilisateur par défaut *Runcloud*.
+:    * Choisissez l'utilisateur par défaut *Runcloud*.
 :    * Laissez le chemin public (Public Path) par défaut.
 :    * Sélectionnez la version de PHP la plus avancée à disposition.
 :    * Sélectionnez *NGINX + Apache2 Hybrid (You will be able to use .htaccess)*.
-:    * Choississez le mode *Production*.
+:    * Choisissez le mode *Production*.
 :    * Laissez la case *Advanced Settings* décochée pour obtenir l'ensemble des configurations par défaut.
 :    * Cliquez sur {==Add Web Application==}.
 
@@ -131,7 +131,7 @@ sudo su
 **Configuration du nom de domaine**
 
 :    * Dans le menu de gauche, cliquez sur {==Domain Name==}.
-:    * Ajoutez les noms de domaine `www.exemple.com` et `exemple.com` à la liste existante.
+:    * Ajoutez votre nom de domaine sous ces deux formes : `www.exemple.com` et `exemple.com`, à la liste existante.
 :    * Cliquez sur {==Attach Domain Name==}.
 
 ***
@@ -212,7 +212,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 :    * Définissez une périodicité de renouvellement en sélectionnant *Every 10 days at midnight*.
 :    * Cliquez sur {==Add a Cron Job==}.
 
-!!! success "Félicitation ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
+!!! success "Félicitations ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
 
 ***
 
@@ -243,7 +243,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 :    * Sélectionnez la langue de votre choix.
 :    * Cliquez sur {==C'est parti !==}.
-:    * Injectez le nom de votre base de données Runcloud.io (A)
+:    * Entrez le nom de votre base de données Runcloud.io (A)
 :    * Copiez/collez le nom d'administrateur de la base de données Runcloud.io (A)
 :    * Copiez/collez le mot de passe de la base de données Runcloud.io (A)
 :    * Laissez par défaut *Database Host* à `localhost`.
@@ -290,17 +290,12 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 **Injection de la règle de réécriture d'URL**
 
-!!! info "Informationç" 
-    Le fichier Htaccess vous permet de définir des règles de redirection du trafic sur votre site web. Après ette étape, l'ensemble des utilisateurs essayant d'accéder à l'IP static de votre instance Lightsail seront automatiquement redirigés vers votre nom de domaine sécurisé.
+!!! info "Information" 
+    Le fichier Htaccess vous permet de définir des règles de redirection du trafic sur votre site web. Après cette étape, l'ensemble des utilisateurs essayant d'accéder à l'IP static de votre instance Lightsail seront automatiquement redirigés vers votre nom de domaine sécurisé.
 
 :    * Cliquez sur le nom de votre application.
 :    * Toujours dans le menu de gauche, cliquez sur {==File Manager==}.
-:    * Selectionnez le fichier `.htaccess` et cliquez sur *View/Edit*.
-:    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous :
-``` yaml
-RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
-RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
-```
+:    * Sélectionnez le fichier `.htaccess` et cliquez sur *View/Edit*.
 
 ***
 
@@ -310,17 +305,23 @@ RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
 
 **Configuration de la règle de réécriture d'URL**
 
+:    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous sous `RewriteBase /` :
+``` yaml
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
+RewriteRule ^(.*)$ https://votresite.com/$1 [R=301,L]
+```
+
 :    * Dans votre interface Lightsail, copiez l'adresse IP Static de votre instance.
 :    * Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.
 :    * Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
 ``` yaml
 RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]
-RewriteRule ^(.*)$ https://yoursite.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
 ```
 
 :    * Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.
 :    * Cliquez sur Sauvegarder en haut ou appuyer sur les touches <kbd>Ctrl</kbd> + <kbd>S</kbd> pour enregistrer vos modifications.
 
-!!! success "Félicitation ! Wordpress est correctement installé et configuré pour supporter la création de votre site web."
+!!! success "Félicitations ! Wordpress est correctement installé et configuré pour supporter la création de votre site web."
 
 ***
