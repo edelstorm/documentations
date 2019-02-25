@@ -25,15 +25,13 @@ ssh-keygen -t rsa
 ```
 
 :    * Vous pouvez ensuite nommer votre paire de clés, sinon appuyez juste sur <kbd>Entrer</kbd>.
+:    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
+:    * Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.
 
 !!! note "À savoir"
 
     Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas le voir se former sur votre écran.<br>
-    C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper.<br> 
-    Vous devez donc le définir à l'aveugle !
-
-:    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
-:    * Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.
+    C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !
 
 ***
 
@@ -57,47 +55,32 @@ ssh-keygen -t rsa
 
 ## Création de l'instance
 
-<p><a href="../assets/images/aws/creation-instance/fr/2a.gif" target="_blank"><img alt="Creation Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/2a.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/NG6jjPI0bRg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Création de votre instance Amazon Lightsail**
+**Options de l'instance Amazon Lightsail**
 
-:    * Rendez-vous sur votre console d'administration AWS, tapez *Lightsail* dans la barre recherche et cliquez sur ce service.
-:    * Sélectionnez la langue que vous souhaitez pour votre interface.
+:    * Dans votre console de management AWS, cherchez le service *Lightsail* dans la barre recherche et cliquez dessus.
+:    * Sélectionnez la langue que vous souhaitez pour l'interface.
 :    * Cliquez sur {==Créer une instance==}.
-
-***
-
-<p><a href="../assets/images/aws/creation-instance/fr/2b.gif" target="_blank"><img alt="Creation Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/2b.gif"></a></p>
-
-***
-
-**Zone géographique, type d'image et connexion SSH**
-
-:    * Choisissez la région de votre instance, elle doit être au plus proche de vos futurs utilisateurs. Laissez par défaut la zone de votre instance.
+:    * Choisissez l'emplacement de l'instance, la région que vous choississez doit être au plus proche de vos futurs utilisateurs. 
+:    * Laissez par défaut la zone de disponibilité de l'instance.
 :    * Choisissez *Linux/Unix* comme plateforme.
-:    * Sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
-:    * Téléchargez votre paire de clés SSH publique (celle se terminant par `.pub`) afin de sécuriser les communications entre votre machine et cette instance.
+:    * Cliquez sur l'onglet *Système d'exploitation uniquement* et sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
+:    * Nous n'ajouterons pas de script de lancement. (I)
+:    * Cliquez sur *Modifier une paire de clés SSH* et cliquez sur *Charger un nouveau* puis sur {==Charger==}. 
+:    * Cliquez sur *Choisir un fichier* et choississez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
+:    * Choississez le plan d'instance basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
+:    * Nommez votre instance, de préférence avec votre nom de domaine. (A)
+:    * Vous pouvez appliquer des balises d'identifications à cette instance si vous pensez comptez en avoir plusieurs par la suite.
+:    * Cliquez sur {==Créer une instance==} et patientez un instant que votre instance s'initialise.
 
-***
+!!! info "Informations"
 
-<p><a href="../assets/images/aws/creation-instance/fr/3.gif" target="_blank"><img alt="Zone géographique, type d'image et clé SSH Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/3.gif"></a></p>
+    À partir de cette étape, vous souscrivez au service Amazon Lighsail, vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.
 
-***
-
-**Plan d'instance et identification**
-
-!!! info "Facturation AWS"
-
-    À partir de cette étape, vous souscrivez au service Amazon Lighsail, votre instance peut-être supprimée à tout moment si vous n'en avez plus besoin. Vous pouvez consulter l'évolution de votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">facturation</a>.
-
-:    * Sélectionnez le plan basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
-:    * Nommez votre instance, de préférence avec votre nom de domaine.
-:    * Vous pouvez aussi appliquer des tags d'identifications, si vous pensez créer de nombreuses instances par la suite.
-:    * Cliquez sur {==Créer une instance==} et attendez 5 minutes que votre instance s'initialise.
-
-!!! success "Votre instance est prête à être utilisée pour votre site web."
+!!! success "Votre instance Amazon Lightsail est prête à être utilisée pour votre site web."
 
 ***
 
