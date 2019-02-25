@@ -136,7 +136,7 @@
 :    * Aller sur la page d'accueil Runcloud.io
 :    * Dans le menu de gauche, allez dans *Web Applications* et cliquez sur votre application Wordpress.
 :    * Dans le menu de gauche, cliquez sur {==File Manager==}.
-:    * Selectionnez le fichier *wp-config.php* et cliquez dans le menu en haut sur *View/Edit*.
+:    * Sélectionnez le fichier *wp-config.php* et cliquez dans le menu en haut sur *View/Edit*.
 :    * Une fois dans l'éditeur, copiez / collez la commande ci-dessous à la suite de `define('WP_DEBUG', false);` : 
 ``` sh
 define( 'AS3CF_SETTINGS', serialize( array(
@@ -150,8 +150,6 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 :    * Appuyez sur <kbd>Ctrl</kbd> + <kbd>S</kbd> pour sauvegarder les modifications.
 
-!!! warning "N'oubliez pas de remplacer *YourAccessKeyID* et *YourAccessKeySecret* par les clés présentes dans la dernière étape IAM."
-
 ***
 
 ## Certificate Manager
@@ -160,7 +158,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-**Creation du certificat AWS**
+**Création du certificat AWS**
 
 :    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
 :    * En haut à droite, sélectionnez l'enplacement *US East (N. Virginia)*. (I)
@@ -186,7 +184,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Sélectionnez *CNAME* comme type d'engistrement, completez le sous-domaine et la valeur proposez par AWS pour la vérification puis sauvegardez l'ensemble.
 :    *  Revenez sur *AWS Certicate Manager*, cliquez sur {==Continuer==} et patientez un instant pendant la validation votre nom de domaine.
 
-!!! success "Félicitaton vous avez généré un certicat AWS pour votre nom de domaine."
+!!! success "Félicitations vous avez généré un certicat AWS pour votre nom de domaine."
 
 ***
 
@@ -196,14 +194,14 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-**Creation du Content Delivery Network**
+**Création du Content Delivery Network**
 
 :    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
 :    * Cherchez le service AWS *Cloudfront* et cliquez dessus.
 :    * Cliquez sur {==Créer une distribution==}.
 :    * Dans la section *Web*, cliquez sur {==Mise en route==}.
 :    * Pour le *nom de domaine d'origine*, sélectionnez votre compartiment S3.
-:    * Dans *Autre nom de domaine (CNAME)*, inscrivez le sous-domaine `cdn1.exemple.com`. Remplacez *exemple.com* pour votre nom de domaine.
+:    * Dans *Autre nom de domaine (CNAME)*, tapez le sous-domaine `cdn1.exemple.com`. Remplacez *exemple.com* pour votre nom de domaine.
 :    * Cochez la case *Certificat SSL Personnalisé (exemple.com)*
 :    * Sélectionnez le certificat ACM relatif à votre nom de domaine.
 :    * Cliquez sur {==Créer une distribution==}.
@@ -216,10 +214,10 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 **Mapping CNAME Cloudfront et Amazon Lightsail**
 
-:    * Sélectionnez la distribution Cloudfront que vous venez de créer en cochant la case puis cliquez sur {==Paramètre de distribution==}.
-:    * Copier / collez le contenu de la section *Nom de domaine*.
+:    * Cliquez sur l'ID de la distribution Cloudfront que vous venez de créer.
+:    * Copiez le contenu de la section *Nom de domaine*.
 :    * Revenez dans votre interface Lightsail, dans la section Mise en réseau puis dans la zone DNS de votre nom de domaine.
-:    * Ajoutez un enregistrement de type CNAME : tappez `cdn1.exemple.com`, liez le au nom de domaine de la distribution Cloudfront et sauvegardez l'ensemble.
+:    * Ajoutez un enregistrement, choisissez le type *CNAME*. Dans le champ *Sous domaine* tapez `cdn1`, puis collez le contenu que vous venez de copier dans le second champ de droit. Sauvegardez l'ensemble.
 
 ***
 
@@ -231,7 +229,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 **Installation du plugin WP Offload Media**
 
-:    * Aller sur votre interface d'administration Wordpress.
+:    * Allez sur votre interface d'administration Wordpress.
 :    * Dans le menu de gauche, cliquez sur {==Extensions > Ajouter==}.
 :    * Dans la barre de recherche, tapez *Amazon S3*.
 :    * Installez et activez l'extension *WP Offload Media Lite for Amazon S3*.

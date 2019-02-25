@@ -2,7 +2,7 @@
 
 ## S3 Bucket
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ujgFncj9nf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/VQztyuW6X24?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -51,9 +51,8 @@
 }
 ```
 
+:    * Don't forget to switch *YourBucketName* with the name you gave your bucket.
 :    * Once the policy edited, click on {==Save==}.
-
-!!! warning "Don't forget to switch *YourBucketName* with the name you gave your bucket."
 
 ***
 
@@ -153,8 +152,6 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 :    * Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
 
-!!! warning "Replace *YourAccessKeyID* and *YourAccessKeySecret* with the keys from the last IAM step."
-
 ***
 
 ## Certificate Manager
@@ -168,11 +165,11 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Go back to the Management Console by clicking on the AWS top left logo.
 :    * On the top right corner, select *US East (N. Virginia)* location. (I)
 :    * Search for the AWS service *Certificate Manager* and click on it.
-:    * Dans la section de gauche *Allouer les certificats*, cliquez sur {==Démarrage==}.
-:    * Cochez la case *Demander un certificat public* et cliquez sur {==Demander un certificat==}.
-:    * Fournissez votre nom de domaine de cette façon : `*.exemple.com` et cliquez sur {==Suivant==}.
-:    * Cochez la case *Validation DNS* et cliquez sur {==Vérification==}.
-:    * Validez les informations fournient et cliquez sur {==Confirmer et demander==}.
+:    * In the left section *Provision certificates*, click on {==Get started==}.
+:    * Check the *Request a public certificate* box and click on {==Request a certificate==}.
+:    * Enter your domain name this way : `*.exemple.com` and click on {==Next==}.
+:    * Check the *DNS validation* box and click on {==Review==}.
+:    * Make sure the information on the screen are correct and click on {==Confirm and request==}.
 
 ***
 
@@ -180,16 +177,17 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-**Validation DNS du nom de domaine fournit**
+**Domain name DNS validation**
 
-:    * Patientez un instant, AWS va générer une configuration DNS CNAME pour vous permettre de vérifier votre nom de domaine.
-:    * Copiez le début du nom CNAME comme dans l'exemple : `_55deac851379bd6906fd5f90ed2e95b3`
-:    * Rendez-vous dans votre interface Amazon Lightsail, cliquez sur {==Mise en réseau==} puis sur votre zone DNS.
-:    * Cliquez sur {==Ajoutez un enregistrement==}.
-:    * Sélectionnez *CNAME* comme type d'engistrement, completez le sous-domaine et la valeur proposez par AWS pour la vérification puis sauvegardez l'ensemble.
-:    *  Revenez sur *AWS Certicate Manager*, cliquez sur {==Continuer==} et patientez un instance pendant la validation votre nom de domaine.
+:    * Wait for a moment, AWS is going to generate a DNS CNAME configuration. It will enable you to verify your domain name.
+:    * Copy the beginning of the CNAME like so : `_55deac851379bd6906fd5f90ed2e95b3`
+:    * Go to your Amazon Lightsail interface. Click on {==Networking==} then on your DNS zone.
+:    * Click on {==Add record==}.
+:    * Select *CNAME* as a record type. Paste the beginning of the CNAME you copied on the *Subdomain* field. Then copy the *Value* you can find on the *AWS Certificate Manager* page and paste it in the *Maps to* field.
+:    * Click on the green button to save.
+:    * Go back to the *AWS Certificate Manager*, click on {==Continue==} and wait while your domain name gets validated.
 
-!!! success "Félicitaton vous avez généré un certicat AWS pour votre nom de domaine."
+!!! success "Congratulations, you now have generated an AWS certificate for your domain name."
 
 ***
 
@@ -199,17 +197,17 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-**Creation du Content Delivery Network**
+**Content Delivery Network Creation**
 
-:    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
-:    * Cherchez le service AWS *Cloudfront* et cliquez dessus.
-:    * Cliquez sur {==Créer une distribution==}.
-:    * Dans la section *Web*, cliquez sur {==Mise en route==}.
-:    * Pour le *nom de domaine d'origine*, sélectionnez votre compartiment S3.
-:    * Dans *Autre nom de domaine (CNAME)*, inscrivez le sous-domaine `cdn1.example.com`. Remplacez *exemple.com* pour votre nom de domaine.
-:    * Cochez la case *Certificat SSL Personnalisé (exemple.com)*
-:    * Sélectionnez le certificat ACM relatif à votre nom de domaine.
-:    * Cliquez sur {==Créer une distribution==}.
+:    * Go back to the homepage by clicking on the top left AWS logo.
+:    * Search the AWS service *Cloudfront* and click on it.
+:    * Click on {==Create distribution==}.
+:    * In the *Web* section, click on {==Get started==}.
+:    * For the *Origin domain name* filed, select your S3 bucket.
+:    * In *Alternate domain name (CNAMEs)*, write this: `cdn1.example.com`. Replace *example.com* with your domain name.
+:    * Check the *Custom SSL Certificate (example.com)* box.
+:    * Select the ACM certificate matching your domain name.
+:    * Click on {==Create distribution==}.
 
 ***
 
@@ -217,12 +215,12 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-**Mapping CNAME Cloudfront et Amazon Lightsail**
+**CNAME Cloudfront and Amazon Lightsail Mapping**
 
-:    * Sélectionnez la distribution Cloudfront que vous venez de créer en cochant la case puis cliquez sur {==Paramètre de distribution==}.
-:    * Copier / collez le contenu de la section *Nom de domaine*.
-:    * Revenez dans votre interface Lightsail, dans la section Mise en réseau puis dans la zone DNS de votre nom de domaine.
-:    * Ajoutez un enregistrement de type CNAME : tappez `cdn1.exemple.com`, liez le au nom de domaine de la distribution Cloudfront et sauvegardez l'ensemble.
+:    * Click on the Cloudfront distribution ID.
+:    * Copy *Domain name* content.
+:    * Go back to the Lightsail interface, in the Networking section then in your domain name's DNS zone.
+:    * Add a record and choose *CNAME record* on the first field. For the *subdomain* field type `cdn1` and for the *Maps to* field paste the content you just copied. Then save.
 
 ***
 
