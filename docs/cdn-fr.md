@@ -51,7 +51,7 @@
 }
 ```
 
-!!! warning "N'oubliez pas de remplacer *YourBucketName* par le nom que vous avez donné à votre compartiment."
+:    * Remplacez *YourBucketName* par le nom que vous avez donné à votre compartiment.
 :    * Une fois la stratégie éditée, cliquez sur {==Enregistrer==}.
 
 ## Stratégie IAM
@@ -66,7 +66,7 @@
 
 :    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
 :    * Cherchez le service IAM et cliquez dessus pour y accéder.
-:    * Dans le menu de gauche, cliquez sur {==Stratégie==}.
+:    * Dans le menu de gauche, cliquez sur {==Stratégies==}.
 :    * Cliquez sur {==Créer une stratégie==}.
 :    * Cliquez sur l'onglet {==JSON==} pour accéder à l'éditeur en ligne.
 :    * Une fois dans l'éditeur, supprimez le contenu existant et copiez / collez la stratégie IAM ci-dessous :
@@ -92,9 +92,8 @@
 }
 ```
 
+:    * Remplacez les deux *YourBucketName* par le nom que vous avez donné à votre compartiment.
 :    * Cliquez sur {==Examiner une stratégie==}.
-
-!!! warning "N'oubliez pas de remplacer les deux *YourBucketName* par le nom que vous avez donné à votre compartiment."
 
 ***
 
@@ -122,13 +121,6 @@
 :    * Choisissez un nom pour votre utilisateur IAM.
 :    * Cochez la case *Accès par programmation*.
 :    * Cliquez sur {==Suivant : Autorisations==}.
-
-***
-
-<p><a href="../assets/images/aws/cdn/fr/6.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/cdn/fr/6.gif"></a></p>
-
-***
-
 :    * Cliquez sur {==Attacher directement les stratégies existantes==}.
 :    * Dans la barre de recherche, tapez le nom de votre stratégie IAM.
 :    * Sélectionnez votre stratégie IAM en cochant la case et cliquez sur {==Suivant : Balises==}.
@@ -144,7 +136,7 @@
 
 ## Edition wp-config.php
 
-<p><a href="../assets/images/aws/cdn/fr/7.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/cdn/fr/7.gif"></a></p>
+<p><a href="../assets/images/aws/cdn/fr/6.gif" target="_blank"><img alt="Creation de l'utilisateur Amazon IAM" src="../assets/images/aws/cdn/fr/6.gif"></a></p>
 
 ***
 
@@ -155,6 +147,10 @@
 :    * Selectionnez le fichier *wp-config.php* et cliquez dans le menu en haut sur *View/Edit*.
 
 ***
+
+<p><a href="../assets/images/aws/cdn/fr/7.gif" target="_blank"><img alt="Fichier wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/cdn/fr/7.gif"></a></p>
+
+
 
 <p><a href="../assets/images/aws/cdn/fr/15.gif" target="_blank"><img alt="Edition wp-config.php Runcloud.io WP Offload Amazon S3" src="../assets/images/aws/cdn/fr/15.gif"></a></p>
 
