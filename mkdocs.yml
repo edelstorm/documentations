@@ -109,10 +109,10 @@ nav:
   - Domain name: domain-name.md
   - Création de l'instance: creation-de-l'instance.md
   - Instance creation: instance-creation.md
-  - Run Cloud FR: run-cloud-fr.md
-  - Run Cloud EN: run-cloud-en.md
-  - CDN FR: cdn-fr.md
-  - CDN EN: cdn-en.md
+  - RunCloud FR: run-cloud-fr.md
+  - RunCloud EN: run-cloud-en.md
+  - Content Delivery Network FR: cdn-fr.md
+  - Content Delivery Network EN: cdn-en.md
   - Design: design.md
   - Aide:
     - Glossaire: aide/glossaire.md
