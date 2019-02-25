@@ -9,8 +9,8 @@
 **Domain name system (DNS) in the cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
 :    * At the top right of the page, select your geographic zone.
-:    * Then in the research bar, type {==*Route 53*==} and click on the result.
-:    * Choose the option on the right: {==*Register domain name*==}.
+:    * Then in the research bar, type {==Route 53==} and click on the result.
+:    * Choose the option on the right: {==Register domain name==}.
 
 ***
 
@@ -23,7 +23,7 @@
 **Check the domain name availability**
 
 :    * Type your domain name and choose an <a href="/help/glossary" target="_blank">extension</a> for your future website.
-:    * Once you have chosen an available domain name, add it to the cart, then click on {==*Continue*==}.
+:    * Once you have chosen an available domain name, add it to the cart, then click on {==Continue==}.
 
 ***
 
@@ -36,7 +36,7 @@
 **Fill out the contact form**
 
 :    * Enable the protection of confidentiality.
-:    * Click on {==*Continue*==}.
+:    * Click on {==Continue==}.
 
 ***
 
@@ -49,7 +49,7 @@
 **Check your information**
 
 :    * Check the box acknowledging that you have read the AWS Domain name registration agreement.
-:    * Click on{==*Complete purchase*==}.
+:    * Click on{==Complete purchase==}.
 
 ***
 
@@ -62,7 +62,7 @@
 **Wait while AWS register your domain name**
 
 :    * Registering your domain name can take up to 15 minutes. Take the time to stretch your legs.  🚶‍♀️ 🤸‍♀️
-:    * Click on {==*Registered domains*==}, your domain name will appear when the registration is complete.
+:    * Click on {==Registered domains==}, your domain name will appear when the registration is complete.
 
 ***
 
@@ -74,8 +74,8 @@
 
 **Delete your default hosted zone**
 
-:    * Once the domain name registered, click on {==*Hosted zones*==}.
-:    * Select your domain name, click on {==*Delete hosted zone*==}, then on {==*Confirm*==}.<br>
+:    * Once the domain name registered, click on {==Hosted zones==}.
+:    * Select your domain name, click on {==Delete hosted zone==}, then on {==Confirm==}.<br>
 
 Delete your default hosted zone will be allowed your own future server to take over.
 
