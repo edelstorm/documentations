@@ -62,23 +62,24 @@ ssh-keygen -t rsa
 **Options de l'instance Amazon Lightsail**
 
 :    * Dans votre console de management AWS, cherchez le service *Lightsail* dans la barre recherche et cliquez dessus.
-:    * Sélectionnez la langue que vous souhaitez pour l'interface.
+:    * Définissez la langue que vous souhaitez utiliser pour l'interface.
 :    * Cliquez sur {==Créer une instance==}.
-:    * Choisissez l'emplacement de l'instance, la région que vous choississez doit être au plus proche de vos futurs utilisateurs. 
+:    * Choisissez l'emplacement de l'instance. Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
+        *Si vous ciblez un public européen francophone, vous pouvez choisir Paris, si vous ciblez des utilisateurs japonais, choisissez Tokyo... Le but est de permettre à vos utilisateurs de charger plus rapidement votre site.*
 :    * Laissez par défaut la zone de disponibilité de l'instance.
 :    * Choisissez *Linux/Unix* comme plateforme.
 :    * Cliquez sur l'onglet *Système d'exploitation uniquement* et sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
 :    * Nous n'ajouterons pas de script de lancement. (I)
 :    * Cliquez sur *Modifier une paire de clés SSH* et cliquez sur *Charger un nouveau* puis sur {==Charger==}. 
-:    * Cliquez sur *Choisir un fichier* et choississez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
-:    * Choississez le plan d'instance basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
+:    * Cliquez sur *Choisir un fichier* et choisissez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
+:    * Choisissez le plan d'instance basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
 :    * Nommez votre instance, de préférence avec votre nom de domaine. (A)
-:    * Vous pouvez appliquer des balises d'identifications à cette instance si vous pensez comptez en avoir plusieurs par la suite.
+:    * Vous pouvez appliquer des balises d'identifications à cette instance si vous pensez en créer plusieurs par la suite.
 :    * Cliquez sur {==Créer une instance==} et patientez un instant que votre instance s'initialise.
 
 !!! info "Informations"
 
-    À partir de cette étape, vous souscrivez au service Amazon Lighsail, vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.
+    À partir de cette étape, vous souscrivez au service Amazon Lighsail. Vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.
 
 !!! success "Votre instance Amazon Lightsail est prête à être utilisée pour votre site web."
 
@@ -94,23 +95,24 @@ ssh-keygen -t rsa
 
 :    * Cliquez sur l'instance et allez dans l'onglet *Mise en réseau*.
 :    * Dans la section *Par-feu*, cliquez sur *Ajouter un autre élément*.
-:    * Ouvrez le port *HTTPS*. Permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
+:    * Dans le champ *Personnaliser, sélectionnez : *HTTPS*.<br>
+        Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
 :    * Cliquez sur *Ajouter un autre élément*.
-:    * Choississez *Personnalisé* et ajoutez le port *34210*.
+:    * Laissez le champ *Personnaliser* et ajoutez le port *34210*.
 :    * Cliquez sur {==Enregistrer==}.
 
 ***
 
 **Fixation de l'adresse IP dynamique**
 
-:    * Cliquez sur {==Attacher une IP Statique==} puis cliquez sur {==Create static IP==}.
+:    * Cliquez sur {==Attacher une IP Statique==} puis cliquez sur {==Créer une IP Statique==}.
 :    * L'emplacement de l'IP Statique doit être similaire à celui de votre instance.
 :    * Nommez votre IP statique de cette façon, avec votre nom de domaine : *StaticIp-VotreNomDeDomaine*.
 :    * Cliquez sur {==Créer==}.
 
 !!! info "Informations"
 
-    Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire que chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.
+    Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.
 
 !!! success "Les ports HTTPS et FTP sont ouvert et votre instance Lightsail possède une adresse IP statique."
 
@@ -127,7 +129,7 @@ ssh-keygen -t rsa
 :    * En haut à gauche, cliquez sur *Accueil* puis sur l'onglet *Mise en réseau*.
 :    * Cliquez sur {==Créer une zone DNS==}.
 :    * Dans le champ, spécifiez votre nom de domaine. (A)
-:    * Vous pouvez associer des tags d'identifications à cette zone DNS si vous comptez en avoir plusieurs par la suite.
+:    * Vous pouvez associer des tags d'identifications à cette zone DNS si vous pensez en créer plusieurs par la suite.
 :    * Cliquez sur {==Créer une zone DNS==}
 
 ***
