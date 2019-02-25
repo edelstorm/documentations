@@ -4,7 +4,7 @@
 
 !!! info "Runcloud.io"
 
-    Runcloud is a service that offers a secure and easy way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud interface so we can install and configure Wordpress on it.
+    Runcloud is a service that offers a secure and easy way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud.io interface so we can install and configure Wordpress on it.
 
 <p><a href="../assets/images/aws/run-cloud/en/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/1.gif"></a></p>
 
@@ -15,8 +15,8 @@
 !!! info "AWS instance windows"
     Keep a window open on your Lightsail instance page. You will need to copy/paste your instance static IP address.
 
-:    * Click on {==*Sign Up*==} at the top right.
-:    * Fill the form and click on {==*Create Free Account*==}.
+:    * Click on {==Sign Up==} at the top right.
+:    * Fill the form and click on {==Create Free Account==}.
 
 ***
 
@@ -24,12 +24,14 @@
 
 ***
 
-:    * Configure your account by clicking on the link you just received on your email box.
+:    * Confirm your account by clicking on {==Verify Registration==} in the email you just received.
 :    * Connect to your account with your login and passwords by clicking on {==*Sign in to Dashboard*==}.
 
 !!! success "You now have a Runcloud.io account!"
 
 ***
+
+<!--
 
 <p><a href="../assets/images/aws/run-cloud/en/3a.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/3a.gif"></a></p>
 
@@ -44,12 +46,13 @@
 :    * Click on the big blue button on the left, {==*Add a new payment method*==}.
 :    * You can now choose between paying by PayPal or by card.
 
-
 ***
+
+-->
 
 ## Installation
 
-<p><a href="../assets/images/aws/run-cloud/en/3b.gif" target="_blank"><img alt="Pricing plan Runcloud.io" src="../assets/images/aws/run-cloud/en/3b.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cAwNQjCvDm4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 

@@ -86,98 +86,83 @@ ssh-keygen -t rsa
 
 ***
 
-## Réglages du Firewall
+## Firewall & Static IP
 
-<p><a href="../assets/images/aws/creation-instance/en/11.gif" target="_blank"><img alt="Firewall Settings Amazon Lightsail" src="../assets/images/aws/creation-instance/en/11.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aBRPNBX_XMc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Opening of the HTTPS & FTP ports**
 
 :    * Click on your instance and go to the *Networking* section.
-:    * Click on *add another*.
-:    * Change the *Custom* to *HTTPS*.
-:    * Click on *add another*.
-:    * Leave the *Custom* and add *34210* on *Port range*. 
-:    * This will secure the communication between your users, the extern's apps and your instance.
+:    * In the *Firewall* section, click on *Add another*.
+:    * Open the *HTTPS* port. Permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
+:    * Click on *Add another*.
+:    * Choose *Custom* et and add the *34210* port. 
 :    * Click on {==Save==}.
 
-!!! success "Your instance is correctly configured for the rest of this tutorial!"
-
 ***
 
-## Static IP
+**Dynamic IP fixation**
 
-**Attach the IP address of your instance**
-
-<p><a href="../assets/images/aws/creation-instance/en/12.gif" target="_blank"><img alt="Static IP Amazon Lightsail" src="../assets/images/aws/creation-instance/en/12.gif"></a></p>
-
-***
+:    * Click on {==Attach static IP==} and click on {==Create static IP==}.
+:    * The static IP location should be the same as your instance.
+:    * Name your static IP this way, with YOUR domain name: *StaticIp-YourDomainName*.
+:    * Click on {==Create==}.
 
 !!! info "Dynamic IP and static IP"
 
      By default, your instance has a dynamic IP. Meaning that each time you restart your instance, your IP address changes. You need a static IP so your website is reachable from a unique address. A static IP is free when it is linked to an instance.
 
-:    * Go in the *Networking* section of your instance and click on *Attach a Static IP*.
-:    * Select the same geographic zone than the one you chose for your instance.
-:    * Attach your instance to this Static IP.
-:    * Name your static IP this way, with YOUR domain name: *StaticIp-YourDomainName*.
-:    * Click on {==Create==}.
-
-!!! success "Your instance now has a unique IP!"
+!!! success "HTTPS et FTP are now open and the instance has now a static IP."
 
 ***
 
 ## DNS zone
 
-<p><a href="../assets/images/aws/creation-instance/en/13.gif" target="_blank"><img alt="DNS Zone Amazon Lightsail" src="../assets/images/aws/creation-instance/en/13.gif"></a></p>
-
-***
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/SL4oC8wznzI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 **Combination of your instance and domain name**
 
-:    * Click on *Home* at the top of the page, then go and click on the *Networking* tab.
-:    * Click on {==Create a DNS zone==}.
-:    * In the field, write your domain name.
-:    * You can add identifications tags to this DNS zone.
-:    * Click on {==Create a DNS zone==}
-
-!!! success "Your instance now has a DNS zone!"
-
-***
-
-<p><a href="../assets/images/aws/creation-instance/en/14.gif" target="_blank"><img alt="DNS Zone Amazon Lightsail" src="../assets/images/aws/creation-instance/en/14.gif"></a></p>
+:    * On the top left corner, click on *Home* then go to the *Networking* tab.
+:    * Click on {==Create DNS zone==}.
+:    * In the field, write your domain name. (A)
+:    * You can add identifications tags to this DNS zone if you will have multiple.
+:    * Click on {==Create DNS zone==}.
 
 ***
 
 **Creation of DNS records**
 
 :    * Click on *Add record*.
-:    * Add a first type A record for `@.YourDomainName.com` pointing to your static IP. <br>
+:    * Add a first type A record for `@.YourDomainName.com` pointing to your static IP. <br><br>
        **To do so**, type <kbd>@</kbd> on the first field on the left. Then select the static IP you just created on the right.
 :    * Click on *Add record* again.
-:    * Add a second type A for `www.YourDomainName.com` pointing to your static IP.<br>
+:    * Add a second type A for `www.YourDomainName.com` pointing to your static IP.<br><br>
        **To do so**, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right.
 
-!!! success "The static IP of your instance now point to your domain name!"
+!!! success "Your instance has a DNS zone and it's static IP point to your domain name."
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/15.gif" target="_blank"><img alt="DNS Records Amazon Lightsail" src="../assets/images/aws/creation-instance/en/15.gif"></a></p>
+
+## Serveurs de noms
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/uVV-diKCHcM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Adding new name servers for your domain name**
-:    * We are still on the same page. Under the records, you can see the *Nameservers*. Those are your new name servers for your DNS zone.<br>
-    **Copy the first**.
-:    * Open your AWS homepage on a new tab. You can easily do so by doing a right click, open in a new tap on *AWS* at the top right of your page. 
+**Adding new nameservers for your domain name**
+
+:    * Under the DNS records, you can see the *Nameservers*.
+:    * On the top right corner, click on *AWS* to open the management console.
 :    * Search for *Route 53* on the search bar and click on it.
 :    * On the left side of the interface, click on *Registered domains*.
 :    * Click on your domain name.
-:    * On the right of the interface on *Add or edit name servers*. Then, replace the name servers you see with the 4 new one from your DNS zone **by copy/pasting it, one by one**.
+:    * On the right, click on *Add or edit name servers*. Then, replace one by one the actuals name servers by the four new ones from your DNS zone.
 :    * Click on {==Update==}.
 
-!!! success "Your DNS servers now match your domain name!"
+!!! success "Your DNS nameservers now match your domain name."
 
 ***
 

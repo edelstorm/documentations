@@ -4,16 +4,13 @@
 
 !!! info "Runcloud.io"
 
-    Runcloud est un service vous permettant de déployer des applications PHP facilement et en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud pour y installer et configurer Wordpress.
+    Runcloud est un service vous permettant de déployer des applications PHP facilement et en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud.io pour y installer et configurer Wordpress.
 
 <p><a href="../assets/images/aws/run-cloud/en/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/1.gif"></a></p>
 
 ***
 
 **Rendez-vous sur le site web de <a href="https://runcloud.io/" target="_blank">RunCloud.io</a>**
-
-!!! info "Fenêtre instance AWS"
-    Gardez cependant une fenêtre AWS ouverte sur la page de votre instance. Vous aurez besoin de copier/coller l'adresse IP statique de celle-ci.
 
 :    * Cliquez sur {==*Sign Up*==} en haut à droite.
 :    * Remplissez le formulaire et cliquez sur {==*Create Free Account*==}.
@@ -24,12 +21,14 @@
 
 ***
 
-:    * Confirmez votre compte en cliquant sur le lien que vous venez de recevoir dans votre boîte mail.
+:    * Confirmez votre compte en cliquant sur {==Verify Registration==} dans l'e-mail que vous avez reçu.
 :    * Connectez-vous à votre compte avec vos identifiants en cliquant sur {==*Sign in to Dashboard*==}.
 
 !!! success "Vous avez un compte Runcloud.io"
 
 ***
+
+<!--
 
 <p><a href="../assets/images/aws/run-cloud/en/3a.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/3a.gif"></a></p>
 
@@ -44,12 +43,13 @@
 :    * Cliquez sur le gros bouton bleu à gauche {==*Add a new payement method*==}.
 :    * Vous pouvez maintenant choisir de payer par PayPal ou par carte.
 
-
 ***
+
+-->
 
 ## Installation
 
-<p><a href="../assets/images/aws/run-cloud/en/3b.gif" target="_blank"><img alt="Pricing plan Runcloud.io" src="../assets/images/aws/run-cloud/en/3b.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cAwNQjCvDm4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -57,25 +57,18 @@
 
 :    * Cliquez sur *Connect a New Server*.
 :    * Nommez votre serveur avec le nom de votre site web.
-:    * Copiez/collez l'IP statique de votre instance Lightsail.
+:    * Copiez/collez l'IP statique de votre instance Lightsail dans le champ du formulaire.
 :    * Inscrivez *AWS* comme Server Provider.
 :    * Cliquez sur {==*Connect this server*==}.
-
-***
-
-<p><a href="../assets/images/aws/run-cloud/en/3b.gif" target="_blank"><img alt="Runcloud.io sur Amazon Lightsail" src="../assets/images/aws/run-cloud/en/3b.gif"></a></p>
-
-***
-
-:    * RunCloud va alors générer une commande d'installation pour votre serveur. Copiez là en cliquant sur l'icône vert à droite de la commande.
+:    * RunCloud.io va générer une commande d'installation pour votre serveur. Copiez-là en cliquant sur l'icône vert à droite de la commande.
 :    * Revenez sur Lightsail et connectez-vous en SSH à votre instance en cliquant sur *Connexion*.
-:    * Une fois à l'intérieur du terminal de votre serveur, tapez la commande ci-dessous (vous ne pourrez pas la copier/coller) pour obtenir les droits administrateurs et appuyez sur <kbd>Entrer</kbd>.
+:    * Une fois à l'intérieur du terminal de votre serveur, tapez la commande ci-dessous directement dans le terminal pour obtenir les droits administrateurs et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
 sudo su
 ```
 
-:    * Cliquez sur l'icône orange en bas à droite de la fenêtre du terminal et collez *(attention pour savoir comment coller dans un terminal, regardez l'étape suivante)* l'ensemble de la commande provenant de Runcloud à l'intérieur. 
-:    * Cliquez sur la partie noire du terminal, faites un clic droit pour coller la commande à l'intérieur et appuyez sur <kbd>Entrer</kbd>.
+:    * Cliquez sur l'icône orange en bas à droite de la fenêtre du terminal et collez la commande à l'intérieur.
+:    * Cliquez ensuite sur la partie noire du terminal, faites un clic droit pour coller la commande à l'intérieur et appuyez sur <kbd>Entrer</kbd>.
 
 ***
 

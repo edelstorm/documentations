@@ -84,98 +84,84 @@ ssh-keygen -t rsa
 
 ***
 
-## Réglages du Firewall
+## Firewall & IP Statique
 
-<p><a href="../assets/images/aws/creation-instance/fr/11.gif" target="_blank"><img alt="Réglages Firewall Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/11.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aBRPNBX_XMc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Ouverture des ports HTTPS & FTP**
 
-:    * Cliquez sur votre instance et rendez-vous dans la section *Mise en réseau*.
+:    * Cliquez sur l'instance et allez dans l'onglet *Mise en réseau*.
+:    * Dans la section *Par-feu*, cliquez sur *Ajouter un autre élément*.
+:    * Ouvrez le port *HTTPS*. Permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
 :    * Cliquez sur *Ajouter un autre élément*.
-:    * Changez le *Personalisé* en *HTTPS*.
-:    * Cliquez sur *Ajouter un autre élément*.
-:    * Laissez la partie *Personalisé* et ajoutez juste *34210* dans la colonne *Plage de ports*. 
-:    * Cette action permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
-:    * Cliquez sur {==Sauvegarder==}.
-
-!!! success "Votre instance est correctement configurée pour la suite de ce tutoriel"
+:    * Choississez *Personnalisé* et ajoutez le port *34210*.
+:    * Cliquez sur {==Enregistrer==}.
 
 ***
 
-## IP Statique
+**Fixation de l'adresse IP dynamique**
 
-<p><a href="../assets/images/aws/creation-instance/fr/12.gif" target="_blank"><img alt="IP Statique Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/12.gif"></a></p>
+:    * Cliquez sur {==Attacher une IP Statique==} puis cliquez sur {==Create static IP==}.
+:    * L'emplacement de l'IP Statique doit être similaire à celui de votre instance.
+:    * Nommez votre IP statique de cette façon, avec votre nom de domaine : *StaticIp-VotreNomDeDomaine*.
+:    * Cliquez sur {==Créer==}.
 
-***
-
-**Fixation de l'adresse IP de votre instance**
-
-!!! info "IP dynamique et IP statique"
+!!! info "Informations"
 
     Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire que chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.
 
-:    * Dans la section *Mise en réseau* de votre instance, cliquez sur *Attacher une IP Statique*.
-:    * Sélectionnez la même zone géographique que celle choisie pour votre instance.
-:    * Attachez votre instance à cette IP statique.
-:    * Nommez votre IP statique de cette façon, avec VOTRE nom de domaine : *StaticIp-VotreNomDeDomaine*.
-:    * Cliquez sur {==Créer==}.
-
-!!! success "Votre instance possède une adresse IP unique !"
+!!! success "Les ports HTTPS et FTP sont ouvert et votre instance Lightsail possède une adresse IP statique."
 
 ***
 
 ## Zone DNS
 
-<p><a href="../assets/images/aws/creation-instance/fr/13.gif" target="_blank"><img alt="Zone DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/13.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/SL4oC8wznzI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Association de votre instance à votre nom de domaine**
 
-:    * Cliquez sur *Accueil* en haut de votre interface Lightsail, puis rendez-vous dans l'onglet *Mise en réseau*.
+:    * En haut à gauche, cliquez sur *Accueil* puis sur l'onglet *Mise en réseau*.
 :    * Cliquez sur {==Créer une zone DNS==}.
-:    * Dans le champ, spécifiez votre nom de domaine.
-:    * Vous pouvez associer des tags d'identifications à cette zone DNS.
+:    * Dans le champ, spécifiez votre nom de domaine. (A)
+:    * Vous pouvez associer des tags d'identifications à cette zone DNS si vous comptez en avoir plusieurs par la suite.
 :    * Cliquez sur {==Créer une zone DNS==}
-
-!!! success "Votre instance possède une zone DNS !"
-
-***
-
-<p><a href="../assets/images/aws/creation-instance/fr/14.gif" target="_blank"><img alt="Zone DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/14.gif"></a></p>
 
 ***
 
 **Création des enregistrements pour votre zone DNS**
 
 :    * Cliquez sur *Ajouter un enregistrement*.
-:    * Ajoutez un premier enregistrement de type A pour `@.VotreNomDeDomaine.com` pointant vers votre IP statique. <br>
+:    * Ajoutez un premier enregistrement de type A pour `@.VotreNomDeDomaine.com` pointant vers votre IP statique. <br><br>
        **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
 :    * Cliquez à nouveau sur *Ajouter un enregistrement*
-:    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br>
+:    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br><br>
        **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
 
-!!! success "L'IP statique de votre instance pointe vers votre nom de domaine !"
+!!! success "Votre instance possède une zone DNS et son IP statique pointe vers votre nom de domaine."
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/fr/15.gif" target="_blank"><img alt="Enregistrements DNS Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/15.gif"></a></p>
+## Serveurs de noms
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/uVV-diKCHcM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Injection des nouveaux noms de serveurs pour votre nom de domaine**
-:    * Nous sommes toujours sur la même page. Sous les enregistrements se trouve une section *Nom de serveurs*. Il s'agit de vos nouveaux noms de serveurs pour cette zone DNS. <br>
-    **Copiez le premier**.
-:    * Ouvrez dans un nouvel onglet votre console d'administration AWS. Vous pouvez facilement y accéder en faisant un clic droit, ouvrir dans un nouvel onglet, sur *AWS* en haut à droite de votre interface Lightsail.
+**Injection des serveurs de nom pour votre nom de domaine**
+
+:    * Sous les enregistrements de la zone DNS se trouve une section *Serveurs de noms*.
+:    * En haut à droite, cliquez sur *AWS* pour accèder à la console de management.
 :    * Cherchez le service *Route 53* dans la barre de recherche et cliquez dessus.
-:    * Sur la gauche de l'interface, cliquez sur *Domaines enregistrés*.
+:    * Dans le menu de gauche, cliquez sur *Domaines enregistrés*.
 :    * Cliquez sur votre nom de domaine.
-:    * Sur la droite de l'interface, cliquez sur *Ajouter ou éditer les noms de serveurs*, remplacez les actuels noms de serveurs par les quatre nouveaux noms de serveurs de votre zone DNS, **en les copie-collant un à un**.
+:    * Sur la droite, cliquez sur *Ajouter/Modifier les noms de serveurs* et remplacez un à un les serveurs de noms actuels par les quatre nouveaux noms de serveurs de votre zone DNS.
 :    * Cliquez sur {==Mettre à jour==}.
 
-!!! success "Les serveurs de votre zone DNS correspondent à votre nom de domaine !"
+!!! success "Les serveurs de noms de votre zone DNS correspondent à votre nom de domaine."
 
 ***
 
