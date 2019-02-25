@@ -57,45 +57,32 @@ ssh-keygen -t rsa
 
 ## Instance creation
 
-<p><a href="../assets/images/aws/creation-instance/en/2a.gif" target="_blank"><img alt="Create Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/2a.gif"></a></p>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/NG6jjPI0bRg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Amazon Lightsail instance creation**
+**Amazon Lightsail instance options**
 
-:    * Go on your AWS administration console, type *Lightsail* in the search bar and click on this service.
-:    * Choose the language you prefer.
-:    * Click on {==Create an instance==}.
-***
-
-<p><a href="../assets/images/aws/creation-instance/en/2b.gif" target="_blank"><img alt="Creation Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/2b.gif"></a></p>
-
-***
-
-**Geographic zone, image type, and SSH connexion**
-
-:    * Choose a region for your instance, it has to be close to where your future users will be located. Leave the instance zone by default.
+:    * Go on your AWS management console, search for the service *Lightsail* and click on it.
+:    * Choose the language you prefer for the interface.
+:    * Click on {==Create instance==}.
+:    * Choose an instance location, the region has to be close to where your future users will be located.
+:    * Let the Availability Zone by default.
 :    * Choose *Linux/Unix* as a platform.
-:    * Select *Ubuntu 16.04 LTS* an operating system.
-:    * Upload your SSH public key (the on that ends up with `.pub`). It will secure communications between your computer and this instance.
-***
-
-<p><a href="../assets/images/aws/creation-instance/en/3.gif" target="_blank"><img alt="Geographic Zone, Image Type and SSH key Amazon Lightsail" src="../assets/images/aws/creation-instance/en/3.gif"></a></p>
-
-***
-
-**Instance and identification plan**
-
-!!! info "AWS billing"
-
-    From this step, you are subscribing to the Amazon Lighsail service. Your account and instance can be deleted at any point if you don't need it anymore. You can check your billing evolution <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">here</a>.
-
+:    * Click on the tab *OS Only* and choose *Ubuntu 16.04 LTS* as an operating system.
+:    * Don't add any shell script. (I)
+:    * Click on *Change SSH key pair* and on *Upload New* then on {==Upload==}. 
+:    * Click on *Choose a file* and choose `id_rsa.pub` file in your `~/.ssh` folder, then click on {==Upload key==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
 :    * Select the basic **3.50$ per month** plan, the first trial month is free.
-:    * Name your instance, with your domain name preferably.
-:    * You can also add identifications tags if you think you are going to create other instances in the future.
-:    * Click on {==Create an instance==} and wait for 5 minutes that your instance to initialize.
+:    * Name your instance, with your domain name preferably. (A)
+:    * You can add identifications tags to this instance if you think you are going to create other instances in the future.
+:    * Click on {==Create an instance==} and wait a moment that your instance to initialize.
 
-!!! success "Votre instance est prête à être utilisée pour votre site web."
+!!! info "Informations"
+
+    À partir de cette étape, vous souscrivez au service Amazon Lighsail, vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.
+
+!!! success "Votre instance Amazon Lightsail est prête à être utilisée pour votre site web."
 
 ***
 
