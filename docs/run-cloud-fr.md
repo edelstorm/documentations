@@ -28,25 +28,6 @@
 
 ***
 
-<!--
-
-<p><a href="../assets/images/aws/run-cloud/en/3a.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/3a.gif"></a></p>
-
-***
-
-**Choisir votre offre**
-
-:    * En haut à droite, cliquez sur le bouton vert *Upgrade Now*.
-:    * Cliquez sur le bouton vert *Change plan*.
-:    * Sélectionnez l'offre *Basic*. Nous vous conseillons de sélectionner le mode de paiement par année (Yearly). Cela vous reviendra à 6,66$ par mois au lieu de 8$. Mais c'est comme vous préférez. 
-:    * Cliquez sur le bouton vert *Choose plan*.
-:    * Cliquez sur le gros bouton bleu à gauche {==Add a new payement method==}.
-:    * Vous pouvez maintenant choisir de payer par PayPal ou par carte.
-
-***
-
--->
-
 ## Installation
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cAwNQjCvDm4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>

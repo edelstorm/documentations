@@ -50,7 +50,7 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: teal
+    primary: pink
     accent: orange
   font:
     text: Ubuntu

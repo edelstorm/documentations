@@ -31,25 +31,6 @@
 
 ***
 
-<!--
-
-<p><a href="../assets/images/aws/run-cloud/en/3a.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/3a.gif"></a></p>
-
-***
-
-**Choose your plan**
-
-:    * At the top right, click on the green button *Upgrade Now*.
-:    * Click on the green button *Change plan*.
-:    * Select the *Basic* plan. We advise you to select the yearly payment method, it will be like paid 6,66$ per month instead of 8$ per month. But it's up to you.
-:    * Click on the green button *Choose plan*.
-:    * Click on the big blue button on the left, {==Add a new payment method==}.
-:    * You can now choose between paying by PayPal or by card.
-
-***
-
--->
-
 ## Installation
 
 ***
